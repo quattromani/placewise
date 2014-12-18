@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+Created by 
+Max Quattromani
+Denver, Colorado
+twitter: @maxquattromani 
+http://maxquattromani.com
+
+
+
+# THANKS
+
+ Twitter Bootstrap  
+ Foundation  
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr

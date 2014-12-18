@@ -1,0 +1,11 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ===========================================================================================
+    Accessibility  / 508 Compliance -- Version: 0.4.2 - Compiled: #{timestamp()}
+   =========================================================================================== */
+
+.accessibility,
+.visually-hidden {
+  @include visually-hidden;
+}

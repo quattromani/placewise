@@ -1,0 +1,278 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-us"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists |  Scaffold</title>
+
+  <meta name="description" content="" />
+  <meta name="author" content="Max Quattromani">
+  <meta name="rating" content="general">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="robots" content="INDEX,FOLLOW" />
+
+  <link rel="stylesheet" href="/scaffold/css/build/main.min.css" >
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Prerender Resume page -->
+  <link rel="prerender" href="http://maxquattromani.com/resume">
+
+  <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="maxquattromani">
+    <meta name="twitter:url" content="http://maxquattromani.com/">
+    <meta name="twitter:creator" content="maxquattromani">
+    <meta name="twitter:title" content="Lists - ">
+    <meta name="twitter:description" content="">
+
+</head>
+
+<body class="">
+  <!--[if lt IE 9]>
+		<div class="browser-alert">
+			<b>Unsupported Browser:</b> You are using an unsupported browser version. Some features on our website may not be available. To get the most out of our website, we recommend you upgrading to the latest version of your <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://support.apple.com/downloads/#safari">Safari</a>, <a href="http://mozilla-firefox.todownload.com">Firefox</a>, or <a href="http://windows.microsoft.com/en-us/internet-explorer/downloads/ie-9/worldwide-languages">Internet Explorer</a>
+			<div class="close">&times;</div>
+		</div>	
+  <![endif]-->
+
+	    <!-- Begin Content Wrapper -->
+    <div class="content">
+      <div class="container">
+
+  <a class="logo" href="/scaffold">
+
+  <span class="h3 logo tight fs40">Scaffold</span>
+
+
+  <span class="logo_slash link fs40">/</span>
+</a>
+<span class="h1 division fs40">Lists</span>
+
+<hr>
+
+
+    <span id="lists-anchor" class="h2 jumpTo-anchor">Lists</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="lists">Isolate</a>
+</div>
+
+<p>Unordered and ordered lists are composed virtually the same. The &lt;ul&gt; is used for non-sequential orderingm while the &lt;ol&gt; is for specific ordering and are preceeded by numbers by default. I start out by stripping all styling from any lists, including padding and margin. Bulleted lists are then classed as &lt;ul class="bulleted&gt;, etc. Lists also get classes added to the first and last item in each (.js-first / .js-last), this gets used for removing any border that we don't want to appear at the top or bottom in particular. Examples below.</p>
+
+<div class="box-column clear">
+    <h3>A Basic Unordered List</h3>
+
+    <ul>
+        <li>This is a list item in an unordered list</li>
+        <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+        <li>
+            Lists can be nested inside of each other
+            <ul>
+                <li>This is a nested list item</li>
+                <li>This is another nested list item in an unordered list</li>
+            </ul>
+        </li>
+        <li>This is the last list item</li>
+    </ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is a list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        Lists can be nested inside of each other
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is another nested list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+    <hr>
+
+    <h3>A Vertical Bulleted Unordered List</h3>
+    <ul class="vertical bulleted">
+        <li>This is a list item in an unordered list</li>
+        <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+        <li>
+            Lists can be nested inside of each other
+            <ul>
+                <li>This is a nested list item</li>
+                <li>This is another nested list item in an unordered list</li>
+            </ul>
+        </li>
+        <li>This is the last list item</li>
+    </ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;vertical bulleted&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is a list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        Lists can be nested inside of each other
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is another nested list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+    <hr>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+        <li>This is a list item in an ordered list</li>
+        <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+        <li>
+            Lists can be nested inside of each other
+            <ol>
+                <li>This is a nested list item</li>
+                <li>This is another nested list item in an ordered list</li>
+            </ol>
+        </li>
+        <li>This is the last list item</li>
+    </ol>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is a list item in an ordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        Lists can be nested inside of each other
+        <span class="nt">&lt;ol&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is another nested list item in an ordered list<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+
+    <hr>
+
+    <h3>Definition List</h3>
+
+    <dl>
+        <dt>Definition List</dt>
+        <dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
+        <dt>This is a term.</dt>
+        <dd>This is the definition of that term, which both live in a dl.</dd>
+        <dt>Here is another term.</dt>
+        <dd>And it gets a definition too, which is this line.</dd>
+        <dt>Here is term that shares a definition with the term below.</dt>
+        <dd>And it gets a definition too, which is this line.</dd>
+    </dl>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Definition List<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>A number of connected items or names written or printed consecutively, typically one below the other.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>This is a term.<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>This is the definition of that term, which both live in a dl.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Here is another term.<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>And it gets a definition too, which is this line.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Here is term that shares a definition with the term below.<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>And it gets a definition too, which is this line.<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></div>
+
+</div>
+
+<div class="box-column clear">
+    <h3>Style those lists!</h3>
+    <h4>Vertical - adds some breathing room</h4>
+    <ul class="vertical">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Vertical Lined - adds some visuals breaks between li's</h4>
+    <ul class="vertical lined">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Vertical Lined - adds some visuals breaks between li's</h4>
+    <ul class="vertical striped">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Vertical Lined &amp; Striped - well, you get it!</h4>
+    <ul class="vertical lined striped">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Horizontal Slashes - add dividers to your list</h4>
+    <ul class="horizontal slashes">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Horizontal Pipes - add dividers to your list</h4>
+    <ul class="horizontal pipes">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+</div>
+
+
+
+	      </div>
+    </div>
+    <!-- ./End Content Wrapper -->
+
+	    <!-- Footer Component -->
+    <footer class="container" role="contentinfo">
+
+      <span class="small-body-text">&copy; <span id="year" class="getYear">year</span> </span>
+
+    </footer>
+    <!-- ./Footer Component -->
+
+    <!-- scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/scaffold/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="/scaffold/js/build/production.min.js"></script>
+
+    
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-50387096-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    
+
+    </body>
+</html>
+</html>
+

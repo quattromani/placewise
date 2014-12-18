@@ -1,0 +1,12 @@
+/*
+ * Image replacement
+ */
+/* ==========================================================================
+    Carousel -- Version: 0.2.1 - Compiled: timestamp()
+    ========================================================================== */
+.carousel .slick-dots button:before {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=carousel.css.map */

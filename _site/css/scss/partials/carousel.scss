@@ -1,0 +1,17 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Carousel -- Version: 0.2.1 - Compiled: #{timestamp()}
+    ========================================================================== */
+
+@if $carousel {
+
+  .carousel {
+
+    .slick-dots button:before {
+      @include font-size(12);
+    }
+  }
+
+}

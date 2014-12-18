@@ -1,0 +1,1381 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-us"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern Library |  Scaffold</title>
+
+  <meta name="description" content="" />
+  <meta name="author" content="Max Quattromani">
+  <meta name="rating" content="general">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="robots" content="INDEX,FOLLOW" />
+
+  <link rel="stylesheet" href="/scaffold/css/build/main.min.css" >
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Prerender Resume page -->
+  <link rel="prerender" href="http://maxquattromani.com/resume">
+
+  <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="maxquattromani">
+    <meta name="twitter:url" content="http://maxquattromani.com/styleguide">
+    <meta name="twitter:creator" content="maxquattromani">
+    <meta name="twitter:title" content="Pattern Library - ">
+    <meta name="twitter:description" content="">
+
+</head>
+
+<body class="styleguide">
+  <!--[if lt IE 9]>
+		<div class="browser-alert">
+			<b>Unsupported Browser:</b> You are using an unsupported browser version. Some features on our website may not be available. To get the most out of our website, we recommend you upgrading to the latest version of your <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://support.apple.com/downloads/#safari">Safari</a>, <a href="http://mozilla-firefox.todownload.com">Firefox</a>, or <a href="http://windows.microsoft.com/en-us/internet-explorer/downloads/ie-9/worldwide-languages">Internet Explorer</a>
+			<div class="close">&times;</div>
+		</div>	
+  <![endif]-->
+
+	    <!-- Begin Content Wrapper -->
+    <div class="content">
+      <div class="container">
+
+  <a class="logo" href="/scaffold">
+
+  <span class="h3 logo tight fs40">Scaffold</span>
+
+
+  <span class="logo_slash link fs40">/</span>
+</a>
+<span class="h1 division fs40">Pattern Library</span>
+
+<hr>
+
+
+    <p>Version: 0.2.5 -- Updated: 2014-12-18 13:24:32 -0700</p>
+<hr>
+
+<!-- Loop through and include all styleguide sections -->
+<span id="box-anchor" class="h2 jumpTo-anchor">Box</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="box">Isolate</a>
+</div>
+
+<p>The box is the simplest of components, it is more for illustrative purposes than anything. The classname is .box and any other element of component can go inside of it. This is styled with a border mostly so it can be seen.</p>
+
+<div class="box-column clearfix">
+
+  <div class="box">
+    <h3>The is a sub-header box</h3>
+  </div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>The is a sub-header box<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</div>
+
+<span id="breadcrumbs-anchor" class="h2 jumpTo-anchor">Breadcrumbs</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="breadcrumbs">Isolate</a>
+</div>
+
+<p>Breadcrumbs are a graphical element used as a navigational aid for users. It serves the purpose of marking the path a user took to get wheere they are. These are largely unstyled but follow the typical convention of a horizontal list of links. Any of the links can be clicked to jump back to a specific spot.</p>
+
+<div class="box-column clear">
+
+    <ul class="horizontal slashes">
+      <li>
+        <a href=''>Home</a>
+      </li>
+      <li>
+        <a href=''>Secondary</a>
+      </li>
+      <li>
+        <a href=''>Tertiary</a>
+      </li>
+    </ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;horizontal slashes&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#39;&#39;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#39;&#39;</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#39;&#39;</span><span class="nt">&gt;</span>Tertiary<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+</div>
+
+<span id="forms-anchor" class="h2 jumpTo-anchor">Forms</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="forms">Isolate</a>
+</div>
+
+<p>A pretty standard form to allow users to enter requested data. Most every form element is covered in this sample. Input fields, checkboxes, radio buttons, select dropdowns, etc. alos included is a submit button and a reset, or clear, button that wipes any filled-in information to be wiped.</p>
+
+<div class="box-column clear">
+
+  <p>* Indicates a required field</p>
+
+  <form action="/" method="post" novalidate>
+    <fieldset>
+      <h3>Contact Information</h3>
+      <!-- First Name / Last Name -->
+      <div class="row clearfix">
+        <div class="column half">
+          <div class="formitem first-name">
+            <label class="required" for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="fname" pattern="[a-zA-Z]+" x-autocompletetype="given-name" tabindex="1" required>
+            <span title="Please enter your First Name"></span>
+          </div>
+        </div>
+
+        <div class="column half">
+          <div class="formitem last-name">
+            <label class="required" for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="lname" x-autocompletetype="surname" tabindex="3" required>
+            <span title="Please enter your Last Name"></span>
+          </div>
+        </div>
+      </div>
+      <!-- .First Name / Last Name -->
+
+      <!-- Service Address -->
+      <div class="row clearfix">
+        <div class="column half">
+
+          <div class="formitem address">
+            <label for="address" class="required">Service Address:</label>
+            <input type="text" id="address" name="address" pattern="[a-zA-Z\d\s\-\,\#\.\+]+" x-autocompletetype="street-address" tabindex="4" required>
+            <span title="Please enter your Service Address"></span>
+          </div>
+
+        </div>
+        <div class="column half">
+
+          <div class="formitem address2">
+            <label for="address2">Apt., Suite, or Floor:</label>
+            <input type="text" id="address2" name="address2" x-autocompletetype="address-line2" tabindex="5">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row clearfix">
+        <div class="column half">
+          <div class="formitem city">
+            <label for="city" class="required">City:</label>
+            <input type="text" id="city" name="city" x-autocompletetype="city" tabindex="6" required>
+            <span title="Please enter your City"></span>
+          </div>
+        </div>
+        <div class="column half">
+
+          <div class="column half">
+
+            <div class="formitem state">
+              <label for="state" class="required">State:</label>
+              <div class="select">
+                <select name="state" id="state" tabindex="7" x-autocompletetype="state" required>
+                  <option value="">Please Select a State</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO" selected="selected">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+          <div class="column half">
+
+            <div class="formitem zip">
+              <label for="zip" class="required">ZIP Code:</label>
+              <input type="text" id="zip" name="zip" pattern="^\d{5,6}(?:[-\s]\d{4})?$" x-autocompletetype="postal-code" tabindex="8" required>
+              <span title="Please enter your ZIP"></span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- .Service Address -->
+
+      <!-- Phone / Alt Phone -->
+      <div class="row clearfix">
+        <div class="column half">
+          <div class="formitem phone-number">
+            <label for="phone-number" class="required">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="XXX-XXX-XXXX" pattern="\d{3}[\-]\d{3}[\-]\d{4}" x-autocompletetype="phone-full" tabindex="9" required>
+            <span title="Gonna need dem digits"></span>
+          </div>
+
+        </div>
+
+        <div class="column half">
+          <div class="formitem phone-number">
+            <label for="phone-number" class="">Alternate Phone Number</label>
+            <input type="tel" id="phone-number-alt" name="phone-number" placeholder="XXX-XXX-XXXX" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="tel" x-autocompletetype="phone-full" tabindex="10">
+          </div>
+
+        </div>
+      </div>
+      <!-- .Phone / Alt Phone -->
+
+      <!-- Email Address -->
+      <div class="row clearfix">
+        <div class="column half">
+
+          <div class="formitem email">
+            <label for="email" class="required">Email Address:</label>
+            <input id="email" type="email" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" x-autocompletetype="email" placeholder="milk@cereal.com" tabindex="11" required>
+            <span title="Please enter your Email Address"></span>
+          </div>
+
+        </div>
+        <div class="column half">
+
+          <div class="formitem email">
+            <label for="url" class="required">Website:</label>
+            <input class="form-control" type="url" name="url" pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$" placeholder="http://website.com" tabindex="12">
+            <span title="Please enter your website address"></span>
+          </div>
+
+        </div>
+      </div>
+      <!-- .Email Address -->
+
+      <!-- Date Input -->
+      <div class="row clearfix">
+        <div class="half">
+          <div class="formitem">
+            <label for="startdate">Pick a Start Date</label>
+            <input id="startdate" type="date">
+          </div>
+        </div>
+        <div class="half">
+          <div class="formitem">
+            <label for="enddate">Pick an End Date</label>
+            <input id="enddate" type="date">
+          </div>
+        </div>
+      </div>
+      <!-- ./ Date Input -->
+
+      <!-- Textarea -->
+      <div class="row clearfix">
+        <div class="column half">
+
+          <div class="formitem textarea">
+            <label for="textarea">Leave a really complimentary comment about us here:</label>
+            <textarea id="textarea" tabindex="13"></textarea>
+          </div>
+
+        </div>
+        <div class="half">
+          <label for="file">Choose a file:</label>
+          <input id="file" type="file">
+        </div>
+      </div>
+      <!-- .Textarea -->
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+      <h3>Checkbox &amp; Radio Inputs</h3>
+
+      <!-- Radio / Select -->
+      <div class="row clearfix">
+        <div class="column full">
+
+          <ul>
+            <li>
+              <div class="formitem">
+                <input type="checkbox" class="switch" id="switch-this" name="switch-this" checked>
+                <label for="switch-this">I choose this</label>
+              </div>
+              <div class="formitem">
+                <input type="checkbox" class="switch" id="switch-that" name="switch-that">
+                <label for="switch-that">I choose that</label>
+              </div>
+            </li>
+            <li>
+              <div class="formitem">
+                <input type="radio" class="radio" id="radio-this" name="sex" value="male">
+                <label for="radio-this">Male</label>
+              </div>
+              <div class="formitem">
+                <input type="radio" class="radio" id="radio-that" name="sex" value="female">
+                <label for="radio-that">Female</label>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <!-- .Radio / Select -->
+    </fieldset>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class=</span><span class="s">&quot;switch&quot;</span> <span class="na">id=</span><span class="s">&quot;switch-this&quot;</span> <span class="na">name=</span><span class="s">&quot;switch-this&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;switch-this&quot;</span><span class="nt">&gt;</span>I choose this<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class=</span><span class="s">&quot;switch&quot;</span> <span class="na">id=</span><span class="s">&quot;switch-that&quot;</span> <span class="na">name=</span><span class="s">&quot;switch-that&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;switch-that&quot;</span><span class="nt">&gt;</span>I choose that<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;radio-this&quot;</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">value=</span><span class="s">&quot;male&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio-this&quot;</span><span class="nt">&gt;</span>Male<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;radio-that&quot;</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">value=</span><span class="s">&quot;female&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio-that&quot;</span><span class="nt">&gt;</span>Female<span class="nt">&lt;/label&gt;</span></code></pre></div>
+
+    <hr>
+
+    <fieldset>
+      <div class="row clearfix">
+        <div class="column full">
+          <h3>Datalist Field</h3>
+          <div class="formitem">
+            <label for="browsers">Internet Browsers</label>
+            <input type="text" list="browsers" name="browsers" placeholder="Type your favorite browser" tabindex="17" >
+            <datalist id="browsers">
+              <option value="Internet Explorer" label="Ugh!">
+                <option value="Firefox" label="Meh">
+                  <option value="Chrome" label="Yay!">
+                    <option value="Opera" label="??">
+                      <option value="Safari" label="huh?">
+                      </datalist>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <hr>
+
+              <fieldset>
+                <div class="row">
+                  <div class="full">
+                    <h3>Search Field</h3>
+                    <div class="formitem">
+                      <input type="search" placeholder="search events by keyword">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <hr>
+
+              <div class="fillit">
+                If you see this, leave this form field blank.
+                <input id="improve" type="text" name="confirm" value="">
+              </div>
+
+              <fieldset>
+                <div class="formitem">
+                  <button class="btn btn-primary" type="submit" name="submit" value="submit">
+                    <span>Submit</span>
+                  </button>
+
+                  <button type="reset" name="reset" value="reset">
+                    <span>Clear</span>
+                  </button>
+                </div>
+              </fieldset>
+
+            </form>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;fieldset&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;formitem&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;generic&quot;</span> <span class="na">class=</span><span class="s">&quot;visually-hidden&quot;</span><span class="nt">&gt;</span>Generic<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;&quot;</span> <span class="na">name=</span><span class="s">&quot;&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Generic&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;21&quot;</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span></code></pre></div>
+
+  <hr>
+
+  <p>Select elements are native parts of web forms; however, they will not naturally take links as values. Having the ability to create a dropdown that contains a series of links can be an effective method to minimize the real estate impact on the UI.</p>
+
+  <div class="select">
+    <select name="" class="selectLink">
+      <option value="null">Select a link</option>
+      <option value="http://google.com">Go</option>
+      <option value="http://google.com">Goo</option>
+      <option value="http://google.com">Goog</option>
+      <option value="http://google.com">Googl</option>
+      <option value="http://google.com">Google</option>
+    </select>
+  </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;selectLink&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;null&quot;</span><span class="nt">&gt;</span>Select a link<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;http://google.com&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;http://google.com&quot;</span><span class="nt">&gt;</span>Goo<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;http://google.com&quot;</span><span class="nt">&gt;</span>Goog<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;http://google.com&quot;</span><span class="nt">&gt;</span>Googl<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;http://google.com&quot;</span><span class="nt">&gt;</span>Google<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</div>
+
+<span id="lists-anchor" class="h2 jumpTo-anchor">Lists</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="lists">Isolate</a>
+</div>
+
+<p>Unordered and ordered lists are composed virtually the same. The &lt;ul&gt; is used for non-sequential orderingm while the &lt;ol&gt; is for specific ordering and are preceeded by numbers by default. I start out by stripping all styling from any lists, including padding and margin. Bulleted lists are then classed as &lt;ul class="bulleted&gt;, etc. Lists also get classes added to the first and last item in each (.js-first / .js-last), this gets used for removing any border that we don't want to appear at the top or bottom in particular. Examples below.</p>
+
+<div class="box-column clear">
+    <h3>A Basic Unordered List</h3>
+
+    <ul>
+        <li>This is a list item in an unordered list</li>
+        <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+        <li>
+            Lists can be nested inside of each other
+            <ul>
+                <li>This is a nested list item</li>
+                <li>This is another nested list item in an unordered list</li>
+            </ul>
+        </li>
+        <li>This is the last list item</li>
+    </ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is a list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        Lists can be nested inside of each other
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is another nested list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+    <hr>
+
+    <h3>A Vertical Bulleted Unordered List</h3>
+    <ul class="vertical bulleted">
+        <li>This is a list item in an unordered list</li>
+        <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+        <li>
+            Lists can be nested inside of each other
+            <ul>
+                <li>This is a nested list item</li>
+                <li>This is another nested list item in an unordered list</li>
+            </ul>
+        </li>
+        <li>This is the last list item</li>
+    </ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;vertical bulleted&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is a list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        Lists can be nested inside of each other
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is another nested list item in an unordered list<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+    <hr>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+        <li>This is a list item in an ordered list</li>
+        <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+        <li>
+            Lists can be nested inside of each other
+            <ol>
+                <li>This is a nested list item</li>
+                <li>This is another nested list item in an ordered list</li>
+            </ol>
+        </li>
+        <li>This is the last list item</li>
+    </ol>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is a list item in an ordered list<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        Lists can be nested inside of each other
+        <span class="nt">&lt;ol&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is a nested list item<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>This is another nested list item in an ordered list<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>This is the last list item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+
+    <hr>
+
+    <h3>Definition List</h3>
+
+    <dl>
+        <dt>Definition List</dt>
+        <dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
+        <dt>This is a term.</dt>
+        <dd>This is the definition of that term, which both live in a dl.</dd>
+        <dt>Here is another term.</dt>
+        <dd>And it gets a definition too, which is this line.</dd>
+        <dt>Here is term that shares a definition with the term below.</dt>
+        <dd>And it gets a definition too, which is this line.</dd>
+    </dl>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Definition List<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>A number of connected items or names written or printed consecutively, typically one below the other.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>This is a term.<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>This is the definition of that term, which both live in a dl.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Here is another term.<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>And it gets a definition too, which is this line.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Here is term that shares a definition with the term below.<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>And it gets a definition too, which is this line.<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></div>
+
+</div>
+
+<div class="box-column clear">
+    <h3>Style those lists!</h3>
+    <h4>Vertical - adds some breathing room</h4>
+    <ul class="vertical">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Vertical Lined - adds some visuals breaks between li's</h4>
+    <ul class="vertical lined">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Vertical Lined - adds some visuals breaks between li's</h4>
+    <ul class="vertical striped">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Vertical Lined &amp; Striped - well, you get it!</h4>
+    <ul class="vertical lined striped">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Horizontal Slashes - add dividers to your list</h4>
+    <ul class="horizontal slashes">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+
+    <hr>
+
+    <h4>Horizontal Pipes - add dividers to your list</h4>
+    <ul class="horizontal pipes">
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+    </ul>
+</div>
+
+<span id="summary-anchor" class="h2 jumpTo-anchor">Summary</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="summary">Isolate</a>
+</div>
+
+<p>Super Cool; the Summary element is a reveal box that can be clicked to show additional information to the user. For browsers that don't support the element, it jsut defaults open - which is not a bad fallback.</p>
+
+<div class="box-column clear">
+    <h3>Summary</h3>
+
+    <details closed>
+        <summary>Summary</summary>
+        <p>If your browser supports the details element, it should allow
+        you to expand and collapse this text by clicking the triangle.</p>
+    </details>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;details</span> <span class="na">closed</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;summary&gt;</span>Summary<span class="nt">&lt;/summary&gt;</span>
+  <span class="nt">&lt;p&gt;</span>If your browser supports the details element, it should allow
+you to expand and collapse this text by clicking the triangle.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/details&gt;</span></code></pre></div>
+
+</div>
+
+<span id="modals-anchor" class="h2 jumpTo-anchor">Modals</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="modals">Isolate</a>
+</div>
+
+<p>A modal is a graphical element used to subordinate a pages main content. The modal node is a child of the parent page and contains tangential information relevant to that parent. Using modals to "takeover" a page is evil. Don't do it!</p>
+
+<p>Modals can closed by clicking the "X" provided or anywhere else on the page.</p>
+
+<div class="box-column clear">
+  <!-- Modal Buttons -->
+  <button id="1" class="btn btn-primary modal-button mobile-full" type="button" arial-controls="modal1">Modal 1</button>
+
+  <button id="2" class="btn btn-primary modal-button mobile-full" type="button" arial-controls="modal2">Modal 2</button>
+  <!-- ./ Modal Buttons -->
+
+  <!-- Modal -->
+  <div class="modal">
+
+    <div id="modal1" class="modal-container">
+      <div class="modal-close">&times;</div>
+      <div id="modal-content">
+
+        <div class="modal-header">
+          <h3>Modal #1</h3>
+        </div>
+
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, officia, quaerat, incidunt, ratione minus blanditiis ipsum ducimus eum commodi reiciendis atque dolores cumque eaque? Qui, voluptate, quis nisi accusamus voluptatem distinctio nemo facere labore error tenetur veniam id rerum quisquam recusandae aspernatur quam in. Eligendi, sit, sunt provident atque dicta illo dolorem adipisci voluptatum quis velit ratione nam libero necessitatibus nisi optio officia debitis voluptatem dolorum fugit voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="" class="btn btn-primary right mobile-full">Continue</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
+  </div>
+  <!-- ./ Modal -->
+
+  <!-- Modal Popup -->
+  <div class="modal">
+
+    <div id="modal2" class="modal-container">
+      <div class="modal-close">&times;</div>
+      <div id="modal-content">
+
+        <div class="modal-header">
+          <h3>Modal #2</h3>
+        </div>
+
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, officia, quaerat, incidunt, ratione minus blanditiis ipsum ducimus eum commodi reiciendis atque dolores cumque eaque? Qui, voluptate, quis nisi accusamus voluptatem distinctio nemo facere labore error tenetur veniam id rerum quisquam recusandae aspernatur quam in. Eligendi, sit, sunt provident atque dicta illo dolorem adipisci voluptatum quis velit ratione nam libero necessitatibus nisi optio officia debitis voluptatem dolorum fugit voluptas repudiandae eum eius quaerat error consectetur omnis labore fuga quo molestias non quas officiis nesciunt delectus. Totam, at, aperiam, fugiat, quam cumque quasi veritatis vel dolorum rerum odio perferendis facere obcaecati facilis officiis id vitae necessitatibus suscipit sit error odit iure tempore optio velit eos dolores doloremque aspernatur accusantium excepturi sint esse explicabo a ad eaque natus non quia praesentium. Libero, ab, iusto placeat maiores unde atque beatae sunt hic quibusdam repudiandae voluptates facere maxime laudantium illo rerum suscipit facilis quidem laborum odio consequuntur repellendus numquam in! Veniam, quasi dolor enim expedita unde. Eligendi, nesciunt voluptas eos temporibus doloribus atque sint. Quae, magni, eveniet, perferendis, voluptatum animi ullam ratione reprehenderit autem enim quidem corporis deleniti iste praesentium molestiae consequuntur pariatur esse id ipsam tenetur quaerat accusantium deserunt sed rerum corrupti unde ipsa aspernatur nulla ex ab nisi incidunt doloremque numquam est nostrum ad cum suscipit. Ut, nobis, similique, sunt commodi harum totam quibusdam alias illo cumque repellendus sequi assumenda deleniti quo saepe iste laborum modi voluptatum quam nostrum placeat dolorum ipsa dolores esse. Alias, nam, minus obcaecati in odit doloremque nobis dignissimos beatae blanditiis veniam ipsum nesciunt cumque architecto praesentium ea repellat perspiciatis qui debitis neque ut odio eaque laudantium reiciendis dolor similique hic provident quod nostrum autem tenetur pariatur aut repellendus dicta! Rem, atque, dolorem alias odit id dicta unde accusamus delectus minus ratione quis ipsa possimus iusto. Repudiandae, vel, nemo, saepe, reprehenderit ipsa provident alias aspernatur ducimus id blanditiis illum dicta optio asperiores unde quia rem earum a recusandae odit dolores! Beatae, nam, autem expedita a sapiente doloremque delectus officia eligendi. Magnam, fugiat, velit facilis cumque ab nostrum cupiditate voluptatum dolorem provident porro reiciendis doloremque accusantium harum aliquam quo. Maiores, magni, odit rem sed possimus neque sapiente dolorum unde nam expedita voluptas facere assumenda inventore sit eaque itaque nulla numquam! Obcaecati, alias, odio, numquam molestiae consequuntur totam minus ipsam autem nisi repellendus nostrum fugiat consequatur ratione velit eum temporibus praesentium?</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="" class="btn btn-primary right mobile-full">Continue</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
+  </div>
+  <!-- ./ Modal Popup -->
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;1&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary modal-button mobile-full&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Modal 1<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;modal&quot;</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;modal1&quot;</span> <span class="na">class=</span><span class="s">&quot;modal-container&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;modal-close&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;modal-content&quot;</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;modal-header&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3&gt;</span>Modal #1<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;modal-body&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, officia, quaerat, incidunt, ratione minus blanditiis ipsum ducimus eum commodi reiciendis atque dolores cumque eaque? Qui, voluptate, quis nisi accusamus voluptatem distinctio nemo facere labore error tenetur veniam id rerum quisquam recusandae aspernatur quam in. Eligendi, sit, sunt provident atque dicta illo dolorem adipisci voluptatum quis velit ratione nam libero necessitatibus nisi optio officia debitis voluptatem dolorum fugit voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;modal-footer&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary right mobile-full&quot;</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;modal-overlay&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</div>
+
+<span id="tooltips" class="h2 jumpTo-anchor">Tooltips</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="tooltips">Isolate</a>
+</div>
+
+<div class="box-column clearfix">
+
+  <div class="row">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempore, labore dignissimos cupiditate? Earum asperiores. <span class="has-tooltip" aria-describedby="tip1">tooltip top <i class="fa fa-google"></i><span id="tip1" class="tip tip-top text-center">Check me out <a href="http://google.com">I'm a link</a>.</span></span>. molestiae ad praesentium qui beatae nam, velit non, aliquid, fugiat impedit vitae distinctio consequatur. Neque nobis nulla vitae dolores eius!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempore, labore dignissimos cupiditate? Earum asperiores. <span class="has-tooltip" aria-describedby="tip2"><i class="fa fa-info"></i> tooltip bottom<span id="tip2" class="tip tip-bottom text-center">Check me out <a href="http://google.com">I'm a link</a>.</span></span>. molestiae ad praesentium qui beatae nam, velit non, aliquid, fugiat impedit vitae distinctio consequatur. Neque nobis nulla vitae dolores eius!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempore, labore dignissimos cupiditate? Earum asperiores. <span class="has-tooltip" aria-describedby="tip3">Definition <i class="fa fa-book"></i><span id="tip3" class="tip tip-left"><span class="h4">Curmudgeon</span><br>/kərˈməjən/<br><em>noun</em><br>a bad-tempered or surly person.<span class="footer"><a href="http://dictionary.reference.com/browse/curmudgeon">Dictionary.com</a></span></span></span>. molestiae ad praesentium qui beatae nam, velit non, aliquid, fugiat impedit vitae distinctio consequatur. Neque nobis nulla vitae dolores eius!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempore, labore dignissimos cupiditate? Earum asperiores. <span class="has-tooltip" aria-describedby="tip4">tooltip right<span id="tip4" class="tip tip-right text-center"><a class="cta" href="http://google.com">I'm a CTA <i class="fa fa-chevron-right"></i></a></span></span>. molestiae ad praesentium qui beatae nam, velit non, aliquid, fugiat impedit vitae distinctio consequatur. Neque nobis nulla vitae dolores eius!</p>
+
+    <hr>
+
+    <span class="has-tooltip" aria-describedby="tip5">section tooltip
+      <span id="tip5" class="tip tip-right text-center">
+
+        <span class="row">
+          <span class="fourth bordered-right"><i class="fa fa-play"></i></span>
+          <span class="fourth bordered-right"><i class="fa fa-pause"></i></span>
+          <span class="fourth bordered-right"><i class="fa fa-stop"></i></span>
+          <span class="fourth"><i class="fa fa-eject"></i></span>
+        </span>
+
+      </span>
+    </span>
+
+    <hr>
+
+    <h6>With an Image</h6>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempore, labore dignissimos cupiditate? Earum asperiores. <span class="has-tooltip" aria-describedby="tip6">tooltip with an image <i class="fa fa-photo"></i><span id="tip6" class="tip tip-bottom"><img class="left" src="/scaffold/media/images/headshot.jpg" alt="headshot">Check me out</span></span>. molestiae ad praesentium qui beatae nam, velit non, aliquid, fugiat impedit vitae distinctio consequatur. Neque nobis nulla vitae dolores eius!</p>
+
+  </div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;has-tooltip&quot;</span> <span class="na">aria-describedby=</span><span class="s">&quot;tip1&quot;</span><span class="nt">&gt;</span>I have a tooltip
+  <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;tip1&quot;</span> <span class="na">class=</span><span class="s">&quot;tip tip-top&quot;</span><span class="nt">&gt;</span>Check me out <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://google.com&quot;</span><span class="nt">&gt;</span>I&#39;m a link<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></div>
+
+</div>
+
+<span id="pagination-anchor" class="h2 jumpTo-anchor">Pagination</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="pagination">Isolate</a>
+</div>
+
+<p>Pagination, similar to <a href="#breadcrumbs-anchor">Breadcrumbs</a>, are a user-interfacer method of providing contextual pathing to a user. Pagination can be numbered as a method of breaking up articles or content into discrete sections, or it can be "Previous" or "Next" for a single continuous article broken into multiple pages. Using the wrong signals in pagination can lead to confusion for the user.</p>
+
+<div class="box-column clear">
+
+  <!-- Pagination Component -->
+  <div class="pagination">
+    <ol>
+      <li>
+          <a class="muted" href=""><i class="fa fa-chevron-left"></i> <span class="pag_text">Prev</span></a>
+      </li>
+      <li>
+          <a class="js-active muted" href="">1</a>
+      </li>
+      <li>
+        <a href="">2</a>
+      </li>
+      <li>
+        <a href="">3</a>
+      </li>
+      <li>
+        <a href="">4</a>
+      </li>
+      <li>
+          <a href=""><span class="pag_text">Next</span> <i class="fa fa-chevron-right"></i></a>
+      </li>
+    </ol>
+  </div>
+  <!-- .Pagination Component -->
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;pagination&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;muted&quot;</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-chevron-left&quot;</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pag_text&quot;</span><span class="nt">&gt;</span>Prev<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;js-active muted&quot;</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;pag_text&quot;</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-chevron-right&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</div>
+
+<span id="pills-anchor" class="h2 jumpTo-anchor">Pills</span>
+
+<div class="right">
+	<a class="btn btn-primary" href="pills">Isolate</a>
+</div>
+
+<p>Pills, or Notifications, help keep a user informed of something that has occured. By design, these pills are only static elements that would require a logic or scripting language to hook them up on another element.</p>
+
+<div class="box-column clear">
+	<ul class="vertical lined">
+		<li>
+			<label for="">Number of members</label>
+			<span class="pill">5</span>
+		</li>
+		<li>
+			<label for="">Fave Drake songs</label>
+			<span class="pill-white">17</span>
+		</li>
+		<li>
+			<label for="">Number of times my daughter has watched Frozen</label>
+			<span class="pill-error">23</span>
+		</li>
+		<li>
+			<label for="">Number of times I have watched Frozen</label>
+			<span class="pill-success">7</span>
+		</li>
+	</ul>
+
+	<hr>
+
+	<ul class="vertical lined">
+		<li>
+			<span class="pill">5</span>
+			<label for="">Number of members</label>
+		</li>
+		<li>
+			<span class="pill-white">17</span>
+			<label for="">Fave Drake songs</label>
+		</li>
+		<li>
+			<span class="pill-error">23</span>
+			<label for="">Number of times my daughter has watched Frozen</label>
+		</li>
+		<li>
+			<label for="">Number of times I have watched Frozen</label>
+			<span class="pill-success">7</span>
+		</li>
+	</ul>
+
+	<hr>
+
+	<label for="">You purchased this item <span class="pill-success">23</span> times</label>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Number of members<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Fave Drake songs<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill-white&quot;</span><span class="nt">&gt;</span>17<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Number of times my daughter has watched Frozen<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill-error&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Number of times I have watched Frozen<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill-success&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Number of members<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill-white&quot;</span><span class="nt">&gt;</span>17<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Fave Drake songs<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill-error&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Number of times my daughter has watched Frozen<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Number of times I have watched Frozen<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill-success&quot;</span><span class="nt">&gt;</span>7<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>You purchased this item <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;pill-success&quot;</span><span class="nt">&gt;</span>23<span class="nt">&lt;/span&gt;</span> times<span class="nt">&lt;/label&gt;</span></code></pre></div>
+</div>
+
+<span id="accordion-anchor" class="h2 jumpTo-anchor">Accordion</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="accordion">Isolate</a>
+</div>
+
+<p></p>
+
+<div class="box-column clear">
+
+  <!-- Accordion Component -->
+  <div class="accordion">
+    <div class="expandable">
+      <ul>
+        <li><h6>Lorem ipsum dolor</h6></li>
+        <li><h6>Lorem ipsum dolor</h6>
+          <ul>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Ipsum</a></li>
+            <li><a href="">Dolor</a></li>
+            <li><a href="">Amet</a></li>
+            <li><a href="">Flipsum</a></li>
+          </ul>
+        </li>
+        <li><h6>Lorem ipsum dolor</h6></li>
+        <li><h6>Lorem ipsum dolor</h6></li>
+        <li><h6>Lorem ipsum dolor</h6>
+          <ul>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Ipsum</a></li>
+            <li><a href="">Dolor</a></li>
+            <li><a href="">Amet</a></li>
+            <li><a href="">Flipsum</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- .Accordion Component -->
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;accordion&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;expandable&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;h6&gt;</span>Lorem ipsum dolor<span class="nt">&lt;/h6&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;h6&gt;</span>Lorem ipsum dolor<span class="nt">&lt;/h6&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Lorem<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Ipsum<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Dolor<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Amet<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Flipsum<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;h6&gt;</span>Lorem ipsum dolor<span class="nt">&lt;/h6&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;h6&gt;</span>Lorem ipsum dolor<span class="nt">&lt;/h6&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;h6&gt;</span>Lorem ipsum dolor<span class="nt">&lt;/h6&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Lorem<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Ipsum<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Dolor<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Amet<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Flipsum<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</div>
+
+<span id="tabs-anchor" class="h2 jumpTo-anchor">Tabs</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="tabs">Isolate</a>
+</div>
+
+<p></p>
+
+<div class="box-column clear">
+
+    <!-- Tabs Component -->
+    <div class="tab-component">
+
+      <div class="tabs">
+        <ul role="tablist">
+          <li class="js-active" role="presentation"><a class="h5" href="#" data-ref="#tab1"><span>Tab 1</span></a></li>
+          <li role="presentation"><a class="h5" href="#" data-ref="#tab2">Tab 2</a></li>
+          <li role="presentation"><a class="h5" href="#" data-ref="#tab3">Tab 3</a></li>
+          <li role="presentation"><a class="h5" href="#" data-ref="#tab4">Tab 4</a></li>
+          <li role="presentation"><a class="h5" href="#" data-ref="#tab5">Tab 5</a></li>
+          <li role="presentation"><a class="h5" href="#" data-ref="#tab6">Tab 6</a></li>
+        </ul>
+      </div>
+
+      <div class="tab-content-container">
+
+        <div id="tab1" class="tab-content js-active" role="tabpanel">
+          <h3>Tab 1 Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.</p>
+        </div>
+
+        <div id="tab2" class="tab-content" role="tabpanel">
+          <h3>Tab 2 Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, enim, dolor! Reiciendis, corporis, laudantium, odio illo dolores numquam eligendi expedita assumenda eaque doloremque quidem quam nam qui ducimus delectus nemo?</p>
+        </div>
+
+        <div id="tab3" class="tab-content" role="tabpanel">
+          <h3>Tab 3 Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.</p>
+        </div>
+
+        <div id="tab4" class="tab-content" role="tabpanel">
+          <h3>Tab 4 Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.</p>
+        </div>
+
+        <div id="tab5" class="tab-content" role="tabpanel">
+          <h3>Tab 5 Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.</p>
+        </div>
+
+        <div id="tab6" class="tab-content" role="tabpanel">
+          <h3>Tab 6 Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- .Tabs Component -->
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-component&quot;</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tabs&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;js-active&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-ref=</span><span class="s">&quot;#tab1&quot;</span><span class="nt">&gt;&lt;span&gt;</span>Tab 1<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-ref=</span><span class="s">&quot;#tab2&quot;</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-ref=</span><span class="s">&quot;#tab3&quot;</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-ref=</span><span class="s">&quot;#tab4&quot;</span><span class="nt">&gt;</span>Tab 4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-ref=</span><span class="s">&quot;#tab5&quot;</span><span class="nt">&gt;</span>Tab 5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-ref=</span><span class="s">&quot;#tab6&quot;</span><span class="nt">&gt;</span>Tab 6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-content-container&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab1&quot;</span> <span class="na">class=</span><span class="s">&quot;tab-content js-active&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Tab 1 Content<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab2&quot;</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Tab 2 Content<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, enim, dolor! Reiciendis, corporis, laudantium, odio illo dolores numquam eligendi expedita assumenda eaque doloremque quidem quam nam qui ducimus delectus nemo?<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab3&quot;</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Tab 3 Content<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab4&quot;</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Tab 4 Content<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab5&quot;</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Tab 5 Content<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab6&quot;</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Tab 6 Content<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente odio hic expedita inventore nesciunt numquam placeat minus. Asperiores, repellendus ipsa magni sequi cum reprehenderit dignissimos aliquid ratione. Voluptatum, fugiat.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</div>
+
+<span id="message-anchor" class="h2 jumpTo-anchor">Dynamic Message Boxes</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="message-box">Isolate</a>
+</div>
+
+<p>The message, or alert, box is a method of alerting a user to a success, a failure, or otherwise importantant contextual information that shlud stand-out due to it's importance. These would be event-propogated as part of a usage flow.</p>
+
+<div class="box-column clearfix">
+
+  <div class="row">
+    <div class="message-loading">
+      <span class="message">loading test message</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="message-valid">
+      <span class="message">valid test message</span>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="message-warning">
+      <span class="message">warning test message</span>
+    </div>
+  </div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;message-loading&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;message&quot;</span><span class="nt">&gt;</span>test message<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;message-valid&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;message&quot;</span><span class="nt">&gt;</span>test message<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;message-warning&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;message&quot;</span><span class="nt">&gt;</span>test message<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+</div>
+
+<span id="box-anchor" class="h2 jumpTo-anchor">Static Information Boxes</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="info-box">Isolate</a>
+</div>
+
+<p>Just like the <a href="#message-anchor">Message Box</a>, the Static Information Boxes contain information useful or need to the user. The are intended to be written in the markup and not injected as an event.</p>
+
+<div class="box-column clearfix">
+
+  <div class="row">
+    <div class="info-box">
+      <span class="message"><i class="glg-download"></i> There aren't any pertinents here for you</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="error-box">
+      <span class="message"><i class="glg-download"></i> There aren't any pertinents here for you</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="valid-box">
+      <span class="message"><i class="glg-download"></i> There aren't any pertinents here for you</span>
+    </div>
+  </div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;message&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;glg-download&quot;</span><span class="nt">&gt;&lt;/i&gt;</span> There aren&#39;t any pertinents here for you<span class="nt">&lt;/span&gt;</span></code></pre></div>
+
+</div>
+
+<span id="table-anchor" class="h2 jumpTo-anchor">Table</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="tables">Isolate</a>
+</div>
+
+<p>One of the most semantic elements in the framework; the table is here mostly so we don't have to look up the best practices for marking them up when needed. We have a few differnt methods for making tables responsive, but had no intention of commiting to one in the Pattern Library.</p>
+
+<div class="box-column clear">
+
+  <!-- Table Component -->
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Items</th>
+        <th class="qty">Qty</th>
+        <th class="price">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="item">Envisioning Information <span>By Edward R. Tufte – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$33.32</td>
+      </tr>
+      <tr>
+        <td class="item">Outliers <span>By Malcolm Gladwell – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">2</td>
+        <td class="price">$33.58 <span>($16.79 × 2)</span></td>
+      </tr>
+      <tr>
+        <td class="item">Don’t Make Me Think <span>By Steve Krug – Paperback</span></td>
+        <td class="stock out">Out of Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$22.80</td>
+      </tr>
+      <tr>
+        <td class="item">Steve Jobs <span>By Walter Isaacson – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$17.49</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="sub">
+        <td colspan="3">Subtotal</td>
+        <td>$107.19</td>
+      </tr>
+      <tr class="tax">
+        <td colspan="3">Tax</td>
+        <td>$10.71</td>
+      </tr>
+      <tr class="total">
+        <td colspan="3">Total</td>
+        <td>$117.90</td>
+      </tr>
+    </tfoot>
+  </table>
+  <!-- .Table Component -->
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>Items<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">&quot;qty&quot;</span><span class="nt">&gt;</span>Qty<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;item&quot;</span><span class="nt">&gt;</span>Envisioning Information <span class="nt">&lt;span&gt;</span>By Edward R. Tufte – Hardcover<span class="nt">&lt;/span&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;stock in&quot;</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;qty&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>$33.32<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;item&quot;</span><span class="nt">&gt;</span>Outliers <span class="nt">&lt;span&gt;</span>By Malcolm Gladwell – Hardcover<span class="nt">&lt;/span&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;stock in&quot;</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;qty&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>$33.58 <span class="nt">&lt;span&gt;</span>($16.79 × 2)<span class="nt">&lt;/span&gt;&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;item&quot;</span><span class="nt">&gt;</span>Don’t Make Me Think <span class="nt">&lt;span&gt;</span>By Steve Krug – Paperback<span class="nt">&lt;/span&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;stock out&quot;</span><span class="nt">&gt;</span>Out of Stock<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;qty&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>$22.80<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;item&quot;</span><span class="nt">&gt;</span>Steve Jobs <span class="nt">&lt;span&gt;</span>By Walter Isaacson – Hardcover<span class="nt">&lt;/span&gt;&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;stock in&quot;</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;qty&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span>$17.49<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;tfoot&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;sub&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>Subtotal<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>$107.19<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;tax&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>Tax<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>$10.71<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;total&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>Total<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>$117.90<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tfoot&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
+
+</div>
+
+
+  <h2>FIN.</h2>
+
+
+	      </div>
+    </div>
+    <!-- ./End Content Wrapper -->
+
+	    <!-- Footer Component -->
+    <footer class="container" role="contentinfo">
+
+      <span class="small-body-text">&copy; <span id="year" class="getYear">year</span> </span>
+
+    </footer>
+    <!-- ./Footer Component -->
+
+    <!-- scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/scaffold/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="/scaffold/js/build/production.min.js"></script>
+
+    
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-50387096-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    
+
+    </body>
+</html>
+</html>
+

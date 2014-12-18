@@ -1,0 +1,43 @@
+.box-column, hr, hr.sandbox {
+  *zoom: 1;
+}
+.box-column:before, hr:before, hr.sandbox:before, .box-column:after, hr:after, hr.sandbox:after {
+  content: " ";
+  display: table;
+}
+.box-column:after, hr:after, hr.sandbox:after {
+  clear: both;
+}
+
+/*
+ * Image replacement
+ */
+/* ==========================================================================
+    Modules -- Version: 0.4.0 - Compiled: timestamp()
+   ========================================================================== */
+.box-column {
+  margin: 0.5em 0 1em;
+  padding: 1em;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background: #fff;
+  overflow: visible;
+}
+
+hr {
+  margin: 1em 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid white;
+}
+
+hr.sandbox {
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+/*# sourceMappingURL=modules.css.map */
