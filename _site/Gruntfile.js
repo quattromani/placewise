@@ -9,7 +9,8 @@ module.exports = function(grunt) {
       concat: {
         dist: {
           src: [
-          'js/*.js'
+          'js/*.js',
+          'sandbox/*/js/*.js'
           ],
           dest: 'js/build/production.js',
         }
@@ -33,7 +34,8 @@ module.exports = function(grunt) {
             src: ['*.scss'],
             dest: 'css/partials',
             ext: '.css'
-          }], 'main.css': 'main.scss',
+          }], 
+          'main.css': 'main.scss',
         },
         dev: {
           files: [{'css/main.css': 'css/scss/main.scss'}]
@@ -70,11 +72,11 @@ module.exports = function(grunt) {
           livereload: true
         },
         scripts: {
-          files: ['js/*.js'],
+          files: ['js/*.js', 'sandbox/*/js/*.js'],
           tasks: ['concat', 'uglify'],
         },
         css: {
-          files: ['css/scss/globals/*.scss','css/scss/partials/*.scss','css/scss/theme/*.scss'],
+          files: ['css/scss/globals/*.scss','css/scss/partials/*.scss','css/scss/theme/*.scss', 'sandbox/*/css/scss/*.scss'],
           tasks: ['sass', 'cssmin', 'autoprefixer'],
         }
       }

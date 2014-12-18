@@ -23,11 +23,11 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 html {
   overflow: auto;
   height: 100%;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
-  color: #454545;
+  color: #8b9195;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;

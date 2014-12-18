@@ -41,11 +41,11 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 html {
   overflow: auto;
   height: 100%;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
-  color: #454545;
+  color: #8b9195;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -681,13 +681,13 @@ section,
   border-left: 1px solid #ccc; }
 
 .bordered-left-dark {
-  border-left: 1px solid #454545; }
+  border-left: 1px solid #8b9195; }
 
 .bordered-right {
   border-right: 1px solid #ccc; }
 
 .bordered-right-dark {
-  border-right: 1px solid #454545; }
+  border-right: 1px solid #8b9195; }
 
 .overlay-striped {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAG0lEQVR42mJgQICZcIIBXZSBOGUAAAAA//8DAIbHA5cISpS5AAAAAElFTkSuQmCC); }
@@ -885,10 +885,10 @@ nav ul {
 
 .color-dark-grey,
 .bg-dark-grey {
-  background-color: #b3b3b3; }
+  background-color: #484b4d; }
 
 .text-dark-grey {
-  color: #b3b3b3; }
+  color: #484b4d; }
 
 .color-grey,
 .bg-grey {
@@ -927,17 +927,17 @@ nav ul {
 
 .color-text,
 .bg-text {
-  background-color: #454545; }
+  background-color: #8b9195; }
 
 .text-text {
-  color: #454545; }
+  color: #8b9195; }
 
 .color-link,
 .bg-link {
-  background-color: #ef272d; }
+  background-color: #f89829; }
 
 .text-link {
-  color: #ef272d; }
+  color: #f89829; }
 
 .color-info,
 .bg-info {
@@ -1046,24 +1046,24 @@ nav ul {
 
 .color-primary-orange,
 .bg-primary-orange {
-  background-color: #f62; }
+  background-color: #f89829; }
 
 .text-primary-orange {
-  color: #f62; }
+  color: #f89829; }
 
 .color-secondary-orange,
 .bg-secondary-orange {
-  background-color: #ee4900; }
+  background-color: #e67f08; }
 
 .text-secondary-orange {
-  color: #ee4900; }
+  color: #e67f08; }
 
 .color-tertiary-orange,
 .bg-tertiary-orange {
-  background-color: #fff3ee; }
+  background-color: #fef7ef; }
 
 .text-tertiary-orange {
-  color: #fff3ee; }
+  color: #fef7ef; }
 
 .color-primary-yellow,
 .bg-primary-yellow {
@@ -1129,7 +1129,7 @@ nav ul {
   color: #e1bbf1; }
 
 .text {
-  color: #454545; }
+  color: #8b9195; }
 
 .ie9 .gradient {
   -webkit-filter: none;
@@ -1154,21 +1154,21 @@ nav ul {
     Typography -- Version: 1.9.0.1  - Compiled: timestamp()
    ========================================================================== */
 @font-face {
-  font-family: "NeueHaasGroteskDisp-Pro-Lt";
-  src: url("../fonts/NHaasGroteskDSPro-45Lt.eot");
-  src: url("../fonts/NHaasGroteskDSPro-45Lt.eot?") format("eot"), url("../fonts/NHaasGroteskDSPro-45Lt.woff") format("woff"), url("../fonts/NHaasGroteskDSPro-45Lt.ttf") format("truetype");
+  font-family: "Gotham-Bold";
+  src: url("../fonts/gotham-bold-webfont.eot");
+  src: url("../fonts/gotham-bold-webfont.eot?") format("eot"), url("../fonts/gotham-bold-webfont.woff") format("woff"), url("../fonts/gotham-bold-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: "normal"; }
 @font-face {
-  font-family: "NeueHaasGroteskDisp-Pro";
-  src: url("../fonts/NHaasGroteskDSPro-55Rg.eot");
-  src: url("../fonts/NHaasGroteskDSPro-55Rg.eot?") format("eot"), url("../fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"), url("../fonts/NHaasGroteskDSPro-55Rg.ttf") format("truetype");
+  font-family: "Gotham-Book";
+  src: url("../fonts/gotham-book-webfont.eot");
+  src: url("../fonts/gotham-book-webfont.eot?") format("eot"), url("../fonts/gotham-book-webfont.woff") format("woff"), url("../fonts/gotham-book-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: "normal"; }
 @font-face {
-  font-family: "NeueHaasGroteskDisp-Pro-75";
-  src: url("../fonts/NHaasGroteskDSPro-75Bd.eot");
-  src: url("../fonts/NHaasGroteskDSPro-75Bd.eot?") format("eot"), url("../fonts/NHaasGroteskDSPro-75Bd.woff") format("woff"), url("../fonts/NHaasGroteskDSPro-75Bd.ttf") format("truetype");
+  font-family: "Gotham-Thin";
+  src: url("../fonts/gotham-thin-webfont.eot");
+  src: url("../fonts/gotham-thin-webfont.eot?") format("eot"), url("../fonts/gotham-thin-webfont.woff") format("woff"), url("../fonts/gotham-thin-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: "normal"; }
 @font-face {
@@ -1178,10 +1178,10 @@ nav ul {
   font-weight: normal;
   font-style: "normal"; }
 .base-font {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .base-font-alt {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: "Gotham-Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .arial {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -1218,7 +1218,7 @@ a {
   vertical-align: baseline;
   font-family: inherit;
   font-weight: 700;
-  color: #ef272d;
+  color: #f89829;
   text-decoration: none;
   cursor: pointer;
   will-change: transition;
@@ -1232,7 +1232,7 @@ a {
     border: 0 none;
     text-decoration: none; }
   a:hover {
-    color: #d31016; }
+    color: #e67f08; }
   a.muted, .muted a {
     color: #e6e6e6; }
   a:active, a:hover {
@@ -1243,10 +1243,11 @@ a {
    ========================== */
 h1,
 .h1 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 42px;
   font-size: 4.2rem;
-  font-weight: 200; }
+  font-weight: 200;
+  color: #f89829; }
   @media (max-width: 62.5em) {
     h1,
     .h1 {
@@ -1260,10 +1261,11 @@ h1,
 
 h2,
 .h2 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 36px;
   font-size: 3.6rem;
-  font-weight: 200; }
+  font-weight: 200;
+  color: #f89829; }
   @media (max-width: 62.5em) {
     h2,
     .h2 {
@@ -1280,7 +1282,8 @@ h3,
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 30px;
   font-size: 3rem;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #8b9195; }
   @media (max-width: 62.5em) {
     h3,
     .h3 {
@@ -1294,24 +1297,27 @@ h3,
 
 h4,
 .h4 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 24px;
   font-size: 2.4rem;
-  font-weight: 200; }
+  font-weight: 200;
+  color: #f89829; }
 
 h5,
 .h5 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #8b9195; }
 
 h6,
 .h6 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 100; }
+  font-weight: 100;
+  color: #f89829; }
 
 .h1,
 .h2,
@@ -1349,7 +1355,7 @@ blockquote {
 
 p,
 .p {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   word-wrap: break-word; }
   p:only-child,
   .p:only-child {
@@ -1404,7 +1410,7 @@ sub, sup {
 mark {
   padding: 0.25em;
   background: #ffda21;
-  color: #454545; }
+  color: #8b9195; }
 
 /* ==========================
 	  Pre
@@ -1443,14 +1449,14 @@ samp {
 .logo {
   font-size: 40px;
   font-size: 4rem;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: bolder; }
 
 .logo_slash,
 .division {
   font-size: 40px;
   font-size: 4rem;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   color: #ef272d;
@@ -1461,7 +1467,7 @@ samp {
   font-size: 4rem;
   position: relative;
   left: -.1em;
-  color: #b3b3b3; }
+  color: #484b4d; }
 
 .box-column, hr, hr.sandbox {
   *zoom: 1; }
@@ -1526,7 +1532,7 @@ ul {
   padding: 0.5em 0; }
 .vertical.lined > li {
   overflow: auto;
-  border-bottom: 1px dotted #ababab; }
+  border-bottom: 1px dotted #f6f6f6; }
   .vertical.lined > li.js-last {
     border-bottom: 0; }
 
@@ -1619,7 +1625,7 @@ button,
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 700;
   text-align: center;
-  color: #ef272d;
+  color: #f89829;
   cursor: pointer; }
   .btn:hover,
   .button:hover,
@@ -1640,7 +1646,7 @@ button,
   button.button-primary,
   .cta.btn-primary,
   .cta.button-primary {
-    background: #ef272d;
+    background: #f89829;
     color: #fff; }
     .btn.btn-primary:hover, .btn.button-primary:hover,
     .button.btn-primary:hover,
@@ -1649,7 +1655,7 @@ button,
     button.button-primary:hover,
     .cta.btn-primary:hover,
     .cta.button-primary:hover {
-      background: #d31016; }
+      background: #e67f08; }
   .btn.btn-error,
   .button.btn-error,
   button.btn-error,
@@ -1929,8 +1935,8 @@ label + .pill,
   color: inherit; }
   .pill-white {
     background: #fff;
-    -webkit-box-shadow: inset 0 0 0 1px #454545;
-    box-shadow: inset 0 0 0 1px #454545; }
+    -webkit-box-shadow: inset 0 0 0 1px #8b9195;
+    box-shadow: inset 0 0 0 1px #8b9195; }
   .pill-error {
     background: #ef272d;
     color: #fff; }
@@ -1958,13 +1964,13 @@ label + .pill,
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #fff;
-  -webkit-box-shadow: 0 1px 2px 0 #b3b3b3;
-  box-shadow: 0 1px 2px 0 #b3b3b3; }
+  -webkit-box-shadow: 0 1px 2px 0 #484b4d;
+  box-shadow: 0 1px 2px 0 #484b4d; }
 .tab-component .tabs {
   display: table;
   width: 100%;
-  -webkit-box-shadow: 0 1px 2px 0 #b3b3b3;
-  box-shadow: 0 1px 2px 0 #b3b3b3;
+  -webkit-box-shadow: 0 1px 2px 0 #484b4d;
+  box-shadow: 0 1px 2px 0 #484b4d;
   border-radius: 3px;
   -webkit-background-clip: padding-box;
   background-clip: padding-box; }
@@ -1984,7 +1990,7 @@ label + .pill,
     background-image: linear-gradient(to bottom, #e6e6e6 0%, #ccc 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE6E6E6', endColorstr='#FFCCCCCC', GradientType=0);
-    color: #454545;
+    color: #8b9195;
     text-align: center;
     vertical-align: middle;
     cursor: pointer; }
@@ -1997,7 +2003,7 @@ label + .pill,
       *display: inline;
       *vertical-align: auto;
       position: relative;
-      font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
+      font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
       font-style: normal;
       font-weight: normal;
       font-weight: normal;
@@ -2007,7 +2013,7 @@ label + .pill,
       -webkit-filter: none;
       filter: none; }
       .tab-component .tabs li.active a, .tab-component .tabs li.js-active a {
-        color: #454545; }
+        color: #8b9195; }
 .tab-component .tab-content {
   display: none; }
   .tab-component .tab-content.active, .tab-component .tab-content.js-active {
@@ -2245,11 +2251,11 @@ label + .pill,
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: none repeat scroll 0 0 #fff;
-  color: #454545;
+  color: #8b9195;
   z-index: 99999; }
   .modal .modal-container > .modal-content {
-    -webkit-box-shadow: 0 0 5px 2px #b3b3b3;
-    box-shadow: 0 0 5px 2px #b3b3b3; }
+    -webkit-box-shadow: 0 0 5px 2px #484b4d;
+    box-shadow: 0 0 5px 2px #484b4d; }
 .modal .modal-close {
   position: absolute;
   right: 1rem;
@@ -2365,7 +2371,7 @@ label + .pill,
       display: block;
       margin-top: .5em;
       padding: .5em 0;
-      border-top: 1px solid #b3b3b3; }
+      border-top: 1px solid #484b4d; }
     .has-tooltip .tip .close-tip-modal {
       position: absolute;
       top: 0;
@@ -2562,7 +2568,7 @@ input[type="range"] {
     height: 1em; }
 
 input::-webkit-datetime-edit-fields-wrapper {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 select,
 datalist,
@@ -3011,7 +3017,7 @@ hr.sandbox {
   border: 1px solid #e6e6e6;
   border-top: none;
   background: #fff;
-  color: #454545;
+  color: #8b9195;
   text-align: center; }
 .styleguide .grid {
   border-radius: 3px;
@@ -3190,5 +3196,48 @@ hr.sandbox {
 /*
  * Image replacement
  */
+.box-column, hr, hr.sandbox {
+  *zoom: 1; }
+  .box-column:before, hr:before, hr.sandbox:before, .box-column:after, hr:after, hr.sandbox:after {
+    content: " ";
+    display: table; }
+  .box-column:after, hr:after, hr.sandbox:after {
+    clear: both; }
+
+/*
+ * Image replacement
+ */
+/* ===========================================================================================
+    Card Component -- Version: 0.1.1 - Compiled: timestamp()
+   =========================================================================================== */
+.card-component {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px; }
+  .card-component header {
+    padding: 1em;
+    border: 1px solid #f89829;
+    border-radius: 3px 3px 0 0;
+    background-color: #f89829;
+    font-weight: bold;
+    color: white;
+    text-align: center; }
+  .card-component section {
+    display: none;
+    margin: 0;
+    padding: 1em;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    background-color: #fff; }
+  .card-component img {
+    width: 120px;
+    height: 120px; }
+  .card-component footer {
+    padding: 1em;
+    border: 1px solid #e1e1e1;
+    border-radius: 0 0 3px 3px;
+    background-color: #e1e1e1;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

@@ -39,14 +39,14 @@ $color-white: #fff;
 $color-off-white: #f2f2f2;
 $color-black: #000;
 $color-grey: #ccc;
-$color-dark-grey: darken($color-grey, 10%);
+$color-dark-grey: #484b4d;
 $color-light-grey: lighten($color-grey, 10%);
 $color-light-light-grey: lighten($color-grey, 45%);
 
 $color-primary-red: #ef272d;
 $color-primary-green: #3eb633;
 $color-primary-blue: #0099ed;
-$color-primary-orange: #f62;
+$color-primary-orange: #f89829;
 $color-primary-yellow: #ffda21;
 $color-primary-indigo: #583c9c;
 $color-primary-violet: #8d25bb;
@@ -67,11 +67,14 @@ $color-tertiary-yellow: lighten($color-primary-yellow, 40%);
 $color-tertiary-indigo: lighten($color-primary-indigo, 40%);
 $color-tertiary-violet: lighten($color-primary-violet, 40%);
 
+$color-primary-brand: $color-primary-orange;
+$color-primary-brand-hover: $color-secondary-orange;
+
 // Typography
-$text: #454545;
+$text: #8b9195;
 $text-color: $text;
-$link: $color-primary-red;
-$link-hover: $color-secondary-red;
+$link: $color-primary-brand;
+$link-hover: $color-primary-brand-hover;
 $text-grey: $color-grey;
 $text-light-grey: $color-light-grey;
 $text-link: $link;
@@ -88,8 +91,8 @@ $site-background: $color-white;
 $site-alpha: .5;
 
 // Buttons
-$color-button-primary: $color-primary-red;
-$color-button-primary-hover: $color-secondary-red;
+$color-button-primary: $link;
+$color-button-primary-hover: $link-hover;
 
 
 // Forms
@@ -114,30 +117,30 @@ $font-weight-bold: 900;
 
 // Font Families List
 $font-faces: (
-  'NeueHaasGroteskDisp-Pro-Lt': ('NHaasGroteskDSPro-45Lt', 400),
-  'NeueHaasGroteskDisp-Pro': ('NHaasGroteskDSPro-55Rg', 400),
-  'NeueHaasGroteskDisp-Pro-75': ('NHaasGroteskDSPro-75Bd', 400),
+  'Gotham-Bold': ('gotham-bold-webfont', 400),
+  'Gotham-Book': ('gotham-book-webfont', 400),
+  'Gotham-Thin': ('gotham-thin-webfont', 400),
   'fontawesome': ('icons/fontawesome-webfont', normal)
 );
 $font-path: '../fonts/';
 
 // Font Familes Variables
-$base-font: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$base-font: 'Gotham-Book', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$base-font-alt: $arial;
+$base-font-alt: 'Gotham-Thin', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $arial-bold: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-$heading-font: $base-font;
+$heading-font: 'Gotham-Bold', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $heading-font-alt: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $fontawesome: 'FontAwesome';
 $pre: Inconsolata,Monaco,Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
 
 $heading-list: (
-  h1   42   200   $heading-font,
-  h2   36   200   $heading-font,
-  h3   30   700   $heading-font-alt,
-  h4   24   200   $heading-font,
-  h5   18   700   $heading-font-alt,
-  h6   18   100   $heading-font
+  h1   42   200   $heading-font   $color-primary-orange,
+  h2   36   200   $heading-font   $color-primary-orange,
+  h3   30   700   $heading-font-alt   $text,
+  h4   24   200   $heading-font   $color-primary-orange,
+  h5   18   700   $heading-font-alt   $text,
+  h6   18   100   $heading-font   $color-primary-orange
 );
 
 $lede-text: ($base-font-size * 1.375);

@@ -129,6 +129,7 @@ $i: 1;
     font-family: nth($value, 4);
     @include font-size(nth($value, 2));
     font-weight: nth($value, 3);
+    color: nth($value, 5);
 
     @if $i <= 3 {
       @include bp(bp-medium) {

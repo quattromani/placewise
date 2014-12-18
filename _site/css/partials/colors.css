@@ -55,11 +55,11 @@
 
 .color-dark-grey,
 .bg-dark-grey {
-  background-color: #b3b3b3;
+  background-color: #484b4d;
 }
 
 .text-dark-grey {
-  color: #b3b3b3;
+  color: #484b4d;
 }
 
 .color-grey,
@@ -109,20 +109,20 @@
 
 .color-text,
 .bg-text {
-  background-color: #454545;
+  background-color: #8b9195;
 }
 
 .text-text {
-  color: #454545;
+  color: #8b9195;
 }
 
 .color-link,
 .bg-link {
-  background-color: #ef272d;
+  background-color: #f89829;
 }
 
 .text-link {
-  color: #ef272d;
+  color: #f89829;
 }
 
 .color-info,
@@ -262,29 +262,29 @@
 
 .color-primary-orange,
 .bg-primary-orange {
-  background-color: #f62;
+  background-color: #f89829;
 }
 
 .text-primary-orange {
-  color: #f62;
+  color: #f89829;
 }
 
 .color-secondary-orange,
 .bg-secondary-orange {
-  background-color: #ee4900;
+  background-color: #e67f08;
 }
 
 .text-secondary-orange {
-  color: #ee4900;
+  color: #e67f08;
 }
 
 .color-tertiary-orange,
 .bg-tertiary-orange {
-  background-color: #fff3ee;
+  background-color: #fef7ef;
 }
 
 .text-tertiary-orange {
-  color: #fff3ee;
+  color: #fef7ef;
 }
 
 .color-primary-yellow,
@@ -369,7 +369,7 @@
 }
 
 .text {
-  color: #454545;
+  color: #8b9195;
 }
 
 .ie9 .gradient {

@@ -9,12 +9,12 @@
   border-radius: 0 0 3px 3px;
   background-clip: padding-box;
   background: #fff;
-  box-shadow: 0 1px 2px 0 #b3b3b3;
+  box-shadow: 0 1px 2px 0 #484b4d;
 }
 .tab-component .tabs {
   display: table;
   width: 100%;
-  box-shadow: 0 1px 2px 0 #b3b3b3;
+  box-shadow: 0 1px 2px 0 #484b4d;
   border-radius: 3px;
   background-clip: padding-box;
 }
@@ -34,7 +34,7 @@
   background-image: linear-gradient(to bottom, #e6e6e6 0%, #ccc 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE6E6E6', endColorstr='#FFCCCCCC', GradientType=0);
-  color: #454545;
+  color: #8b9195;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -49,7 +49,7 @@
   *display: inline;
   *vertical-align: auto;
   position: relative;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-weight: normal;
@@ -60,7 +60,7 @@
   filter: none;
 }
 .tab-component .tabs li.active a, .tab-component .tabs li.js-active a {
-  color: #454545;
+  color: #8b9195;
 }
 .tab-component .tab-content {
   display: none;

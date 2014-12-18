@@ -69,7 +69,7 @@ ul ul {
 }
 .vertical.lined > li {
   overflow: auto;
-  border-bottom: 1px dotted #ababab;
+  border-bottom: 1px dotted #f6f6f6;
 }
 .vertical.lined > li.js-last {
   border-bottom: 0;

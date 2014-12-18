@@ -5,23 +5,23 @@
     Typography -- Version: 1.9.0.1  - Compiled: timestamp()
    ========================================================================== */
 @font-face {
-  font-family: "NeueHaasGroteskDisp-Pro-Lt";
-  src: url("../fonts/NHaasGroteskDSPro-45Lt.eot");
-  src: url("../fonts/NHaasGroteskDSPro-45Lt.eot?") format("eot"), url("../fonts/NHaasGroteskDSPro-45Lt.woff") format("woff"), url("../fonts/NHaasGroteskDSPro-45Lt.ttf") format("truetype");
+  font-family: "Gotham-Bold";
+  src: url("../fonts/gotham-bold-webfont.eot");
+  src: url("../fonts/gotham-bold-webfont.eot?") format("eot"), url("../fonts/gotham-bold-webfont.woff") format("woff"), url("../fonts/gotham-bold-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: "normal";
 }
 @font-face {
-  font-family: "NeueHaasGroteskDisp-Pro";
-  src: url("../fonts/NHaasGroteskDSPro-55Rg.eot");
-  src: url("../fonts/NHaasGroteskDSPro-55Rg.eot?") format("eot"), url("../fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"), url("../fonts/NHaasGroteskDSPro-55Rg.ttf") format("truetype");
+  font-family: "Gotham-Book";
+  src: url("../fonts/gotham-book-webfont.eot");
+  src: url("../fonts/gotham-book-webfont.eot?") format("eot"), url("../fonts/gotham-book-webfont.woff") format("woff"), url("../fonts/gotham-book-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: "normal";
 }
 @font-face {
-  font-family: "NeueHaasGroteskDisp-Pro-75";
-  src: url("../fonts/NHaasGroteskDSPro-75Bd.eot");
-  src: url("../fonts/NHaasGroteskDSPro-75Bd.eot?") format("eot"), url("../fonts/NHaasGroteskDSPro-75Bd.woff") format("woff"), url("../fonts/NHaasGroteskDSPro-75Bd.ttf") format("truetype");
+  font-family: "Gotham-Thin";
+  src: url("../fonts/gotham-thin-webfont.eot");
+  src: url("../fonts/gotham-thin-webfont.eot?") format("eot"), url("../fonts/gotham-thin-webfont.woff") format("woff"), url("../fonts/gotham-thin-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: "normal";
 }
@@ -33,11 +33,11 @@
   font-style: "normal";
 }
 .base-font {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .base-font-alt {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Gotham-Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .arial {
@@ -81,7 +81,7 @@ a {
   vertical-align: baseline;
   font-family: inherit;
   font-weight: 700;
-  color: #ef272d;
+  color: #f89829;
   text-decoration: none;
   cursor: pointer;
   will-change: transition;
@@ -98,7 +98,7 @@ a img {
   text-decoration: none;
 }
 a:hover {
-  color: #d31016;
+  color: #e67f08;
 }
 a.muted, .muted a {
   color: #e6e6e6;
@@ -112,10 +112,11 @@ a:active, a:hover {
    ========================== */
 h1,
 .h1 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 42px;
   font-size: 4.2rem;
   font-weight: 200;
+  color: #f89829;
 }
 @media (max-width: 62.5em) {
   h1,
@@ -134,10 +135,11 @@ h1,
 
 h2,
 .h2 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 36px;
   font-size: 3.6rem;
   font-weight: 200;
+  color: #f89829;
 }
 @media (max-width: 62.5em) {
   h2,
@@ -160,6 +162,7 @@ h3,
   font-size: 30px;
   font-size: 3rem;
   font-weight: 700;
+  color: #8b9195;
 }
 @media (max-width: 62.5em) {
   h3,
@@ -178,10 +181,11 @@ h3,
 
 h4,
 .h4 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: 200;
+  color: #f89829;
 }
 
 h5,
@@ -190,14 +194,16 @@ h5,
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 700;
+  color: #8b9195;
 }
 
 h6,
 .h6 {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 100;
+  color: #f89829;
 }
 
 .h1,
@@ -239,7 +245,7 @@ blockquote {
 
 p,
 .p {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   word-wrap: break-word;
 }
 p:only-child,
@@ -308,7 +314,7 @@ sub, sup {
 mark {
   padding: 0.25em;
   background: #ffda21;
-  color: #454545;
+  color: #8b9195;
 }
 
 /* ==========================
@@ -352,7 +358,7 @@ samp {
 .logo {
   font-size: 40px;
   font-size: 4rem;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: bolder;
 }
 
@@ -360,7 +366,7 @@ samp {
 .division {
   font-size: 40px;
   font-size: 4rem;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
+  font-family: "Gotham-Book", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   color: #ef272d;
@@ -372,7 +378,7 @@ samp {
   font-size: 4rem;
   position: relative;
   left: -.1em;
-  color: #b3b3b3;
+  color: #484b4d;
 }
 
 /*# sourceMappingURL=typography.css.map */
