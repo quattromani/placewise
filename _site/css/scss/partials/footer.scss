@@ -1,0 +1,12 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ===========================================================================================
+    Footer -- Version: 0.4.2 - Compiled: #{timestamp()}
+   =========================================================================================== */
+
+footer {
+  @include padding($spacing, 0);
+  border-top: 1px solid $text-light-grey;
+  text-align: center;
+}

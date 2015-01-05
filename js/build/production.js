@@ -538,30 +538,21 @@ $('.has-tooltip').tooltips();
 (function($) {
 
   $.fn.cardComponent = function() {
-    $('.reveal-details').each(function() {
+    $('.card-component').each(function() {
+      $(this).click(function() {
+        $(this).find('section').slideToggle(400);
+        $(this).find('.toggle-details').toggleClass('show');
 
-      var cardComponent = jQuery(this);
-			
-      cardComponent.click(function() {
-        $(".card-component section").slideToggle( "normal", function() {
-				// animation complete
-  			});
-  			
-  			// toggle button text
-  			cardComponent.toggleClass('show');
-		    if (cardComponent.hasClass('show')) {
-		        cardComponent.text('Hide Details');
-		    } else {
-		        cardComponent.text('Show Details');
-		    }
+        // swap out text
+
       });
-
     });
   }
 
 }(jQuery));
 
 $('.card-component').cardComponent();
+
 (function($) {
 
   $.fn.cardComponent = function() {
