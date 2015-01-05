@@ -1,8 +1,37 @@
 ---
 layout: default
-title: Card
+title: Rich Media
 ---
 
 <div class="rich-media">
-
+  <div class="media-close"></div>
+  <header>
+    <span class="h5">Rich Media Example</span>
+  </header>
+  <section>
+    <div class="row">
+      <div class="fourth">
+        <h4>Big Buck Bunny</h4>
+          <p>Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.</p>
+      </div>
+      <div class="half">
+        <video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="100%" height="auto">
+          <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+          <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
+          <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
+          <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+            <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+            <param name="allowFullScreen" value="true" />
+            <param name="wmode" value="transparent" />
+            <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':false}]}" />
+            <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+          </object>
+        </video>
+      </div>
+      <div class="fourth mobile-hidden">
+        <h4>Big Buck Bunny</h4>
+        <p>Big Buck Bunny (code-named Peach) is a short computer-animated comedy film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film was made using Blender, a free software application for animation made by the same foundation.</p>
+      </div>
+    </div>
+  </section>
 </div>

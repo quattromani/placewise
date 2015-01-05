@@ -3382,3 +3382,65 @@ nav {
     margin-bottom: .5em; }
   .ie8 nav {
     background-color: #ccc; }
+
+.box-column, hr, hr.sandbox {
+  *zoom: 1; }
+  .box-column:before, hr:before, hr.sandbox:before, .box-column:after, hr:after, hr.sandbox:after {
+    content: " ";
+    display: table; }
+  .box-column:after, hr:after, hr.sandbox:after {
+    clear: both; }
+
+/*
+ * Image replacement
+ */
+/* ===========================================================================================
+    Rich Media Component -- Version: 0.1.1 - Compiled: timestamp()
+    =========================================================================================== */
+.rich-media {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5); }
+  .ie .rich-media {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+    zoom: 1; }
+  .rich-media .media-close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer; }
+    .rich-media .media-close:before {
+      content: '\f077';
+      font-family: "FontAwesome";
+      font-size: 18px;
+      font-size: 1.8rem; }
+    .rich-media .media-close.open:before {
+      content: '\f078'; }
+  .rich-media header {
+    padding: 1em;
+    background: rgba(230, 230, 230, 0.9); }
+    .ie .rich-media header {
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6E6E6E6, endColorstr=#E6E6E6E6)";
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6E6E6E6,endColorstr=#E6E6E6E6);
+      zoom: 1; }
+  .rich-media section {
+    margin: 0;
+    padding: 1em;
+    color: #fff; }
+
+.box-column, hr, hr.sandbox {
+  *zoom: 1; }
+  .box-column:before, hr:before, hr.sandbox:before, .box-column:after, hr:after, hr.sandbox:after {
+    content: " ";
+    display: table; }
+  .box-column:after, hr:after, hr.sandbox:after {
+    clear: both; }
+
+/*
+ * Image replacement
+ */
+/* ===========================================================================================
+    Rich Media Component -- Version: 0.1.1 - Compiled: timestamp()
+   =========================================================================================== */
