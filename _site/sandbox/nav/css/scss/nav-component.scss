@@ -1,0 +1,97 @@
+// Pull globals for individually compiled css files
+@import 'css/scss/globals/allGlobals';
+
+/* ===========================================================================================
+    Card Component -- Version: 0.1.1 - Compiled: #{timestamp()}
+    =========================================================================================== */
+
+    nav {
+      position: relative;
+      z-index: 9999;
+
+      @include bp(bp-medium) {
+        position: absolute;
+        width: 100%;
+      }
+
+      .container {
+        display: table;
+        width: 100%;
+
+        @include bp(bp-medium) {
+          @include padding;
+        }
+      }
+
+      ul {
+        display: table-row;
+        width: 100%;
+
+        li {
+          position: relative;
+          display: table-cell;
+          @include padding;
+
+          ul {
+            display: none;
+          }
+
+          &:hover ul {
+            position: absolute;
+            display: block;
+            left: 0;
+
+            li {
+              display: block;
+
+              &.js-last {
+                border: none;
+              }
+
+              a {
+                display: block;
+                width: 100%;
+              }
+            }
+          }
+
+          a {
+            display: block;
+          }
+
+          @include bp(bp-medium) {
+            display: block;
+            width: 100%;
+
+            &:hover ul {
+              display: none;
+            }
+
+            ul.hidden {
+              display: block;
+            }
+          }
+        }
+
+        @include bp(bp-medium) {
+          position: static;
+          display: none;
+        }
+      }
+
+      .show-menu {
+        display: none;
+
+        @include bp(bp-medium) {
+          display:block;
+        }
+      }
+
+      input[type=checkbox]{
+        display: none;
+      }
+
+      input[type=checkbox]:checked ~ ul {
+        display: block;
+      }
+    }

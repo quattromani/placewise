@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             src: ['*.scss'],
             dest: 'css/partials',
             ext: '.css'
-          }], 
+          }],
           'main.css': 'main.scss',
         },
         dev: {
@@ -67,6 +67,16 @@ module.exports = function(grunt) {
         }
       },
 
+      markdown: {
+        all: {
+          files: [{
+          expand: true,
+          src: ['**/*.md', '!node_modules/**/*.md', '!**/README.md'],
+          ext: '.html'
+        }]
+        }
+      },
+
       watch: {
         options: {
           livereload: true
@@ -85,7 +95,7 @@ module.exports = function(grunt) {
 
 grunt.loadNpmTasks('grunt-contrib');
 
-grunt.registerTask('build', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'imagemin', 'watch']);
+grunt.registerTask('build', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'imagemin', 'markdown', 'watch']);
 grunt.registerTask('dev', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'watch']);
 grunt.registerTask('js', ['concat', 'uglify', 'watch']);
 grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin', 'watch']);

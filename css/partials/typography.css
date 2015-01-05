@@ -84,8 +84,6 @@ a {
   color: #f89829;
   text-decoration: none;
   cursor: pointer;
-  will-change: transition;
-  transition: all 0.2s ease-in-out;
 }
 a.logo {
   color: inherit;
