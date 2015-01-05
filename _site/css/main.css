@@ -3179,10 +3179,14 @@ footer {
  */
 /* ===========================================================================================
     Card Component -- Version: 0.1.1 - Compiled: timestamp()
-   =========================================================================================== */
+    =========================================================================================== */
 .card-component {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
+  *zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
   width: 100%;
   border-radius: 3px; }
   .card-component header {
@@ -3190,24 +3194,25 @@ footer {
     border: 1px solid #f89829;
     border-radius: 3px 3px 0 0;
     background-color: #f89829;
-    font-weight: thin;
-    color: white;
+    color: #fff;
     text-align: center; }
   .card-component section {
     display: none;
     margin: 0;
     padding: 1em;
-    border-left: 1px solid #e1e1e1;
-    border-right: 1px solid #e1e1e1;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
     background-color: #fff; }
-  .card-component img {
-    width: 120px;
-    height: 120px; }
+    .card-component section img {
+      width: 120px;
+      height: 120px; }
+    .card-component section p {
+      text-align: center; }
   .card-component footer {
     padding: 1em;
-    border: 1px solid #e1e1e1;
+    border: 1px solid #e6e6e6;
     border-radius: 0 0 3px 3px;
-    background-color: #e1e1e1;
+    background-color: #e6e6e6;
     text-align: center; }
 
 .box-column, hr, hr.sandbox {
