@@ -3411,12 +3411,18 @@ nav {
     right: 1em;
     cursor: pointer; }
     .rich-media .media-close:before {
-      content: '\f077';
+      content: '\f078';
       font-family: "FontAwesome";
       font-size: 18px;
       font-size: 1.8rem; }
-    .rich-media .media-close.open:before {
-      content: '\f078'; }
+  .rich-media.open .h5 {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+  .rich-media.open .media-close:before {
+    content: '\f077'; }
   .rich-media header {
     padding: 1em;
     background: rgba(230, 230, 230, 0.9); }
@@ -3443,4 +3449,4 @@ nav {
  */
 /* ===========================================================================================
     Rich Media Component -- Version: 0.1.1 - Compiled: timestamp()
-   =========================================================================================== */
+    =========================================================================================== */

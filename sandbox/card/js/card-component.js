@@ -5,8 +5,7 @@
       var button = $('button');
 
       button.click(function() {
-        $(this).find('section').slideToggle(400);
-        $(this).find('.toggle-details').toggleClass('show');
+        $(this).parents().siblings('section').slideDown(400).addClass('js-active');
 
         // swap out text
 

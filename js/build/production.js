@@ -542,8 +542,7 @@ $('.has-tooltip').tooltips();
       var button = $('button');
 
       button.click(function() {
-        $(this).find('section').slideToggle(400);
-        $(this).find('.toggle-details').toggleClass('show');
+        $(this).parents().siblings('section').slideDown(400).addClass('js-active');
 
         // swap out text
 
@@ -588,7 +587,11 @@ $('.card-component').cardComponent();
     $('.rich-media').each(function() {
       $('.media-close').click(function(e) {
         $(this).siblings('section').slideToggle();
-        $(this).toggleClass('open');
+        if ($(this).parent().hasClass('open')) {
+          $(this).parent().removeClass('open').addClass('closed');
+        } else {
+          $(this).parent().removeClass('closed').addClass('open');
+        }
         e.preventDefault();
       });
     });

@@ -16,14 +16,20 @@
     cursor: pointer;
 
     &:before {
-      content: '\f077';
+      content: '\f078';
       font-family: $fontawesome;
       @include font-size(18);
     }
+  }
 
-    &.open {
+  &.open {
+    .h5 {
+      @include horizontal-center;
+    }
+
+    .media-close {
       &:before {
-        content: '\f078';
+        content: '\f077';
       }
     }
   }
