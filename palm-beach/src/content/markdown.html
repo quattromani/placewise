@@ -1,0 +1,172 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <h1 id="a-heading">A heading</h1>
+<p>Just a note, I&#39;ve found that I can&#39;t test my markdown parser vs others.
+For example, both markdown.js and showdown code blocks in lists wrong. They&#39;re
+also completely <a href="http://google.com/" title="Google">inconsistent</a> with regards to paragraphs in list items.</p>
+<p>A link. Not anymore.</p>
+<aside>This will make me fail the test because
+markdown.js doesnt acknowledge arbitrary html blocks =/</aside>
+
+<ul>
+<li><p>List Item 1</p>
+</li>
+<li><p>List Item 2</p>
+<ul>
+<li>New List Item 1
+Hi, this is a list item.</li>
+<li>New List Item 2
+Another item<pre><code>Code goes here.
+Lots of it...</code></pre>
+</li>
+<li>New List Item 3
+The last item</li>
+</ul>
+</li>
+<li><p>List Item 3
+The final item.</p>
+</li>
+<li><p>List Item 4
+The real final item.</p>
+</li>
+</ul>
+<p>Paragraph.</p>
+<blockquote>
+<ul>
+<li>bq Item 1</li>
+<li>bq Item 2<ul>
+<li>New bq Item 1</li>
+<li>New bq Item 2
+Text here</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<hr>
+<blockquote>
+<p>Another blockquote!
+I really need to get
+more creative with
+mockup text..
+markdown.js breaks here again</p>
+</blockquote>
+<h2 id="another-heading">Another Heading</h2>
+<p>Hello <em>world</em>. Here is a <a href="//hello">link</a>.
+And an image <img src="src" alt="alt">.</p>
+<pre><code>Code goes here.
+Lots of it...</code></pre>
+
+  </body>
+</html>
