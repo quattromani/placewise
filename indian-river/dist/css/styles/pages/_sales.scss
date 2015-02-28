@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.sale {
+  @include clearfix();
+}
+
+.sale-list {
+  ul {
+    @include vertical-list(lined);
+  }
+}

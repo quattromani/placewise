@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+.home {
+
+  .content {
+    .container {
+      margin: 0 auto;
+    }
+  }
+  .splash {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+
+    @include media($desktop) {
+      @include centerer;
+    }
+
+    @include media($tablet) {
+      width: 100%;
+      min-height: em(480);
+    }
+
+    h1 {
+      @include font-size(62);
+      margin: 0;
+    }
+
+    h2 {
+      @include font-size(34);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      text-transform: uppercase;
+      color: $color-white;
+    }
+
+    input {
+      display: inline-block;
+      @include padding(.25em 1em);
+      border-radius: 0;
+      border: 1px solid $color-white;
+      @include rgba($color-white, .25);
+      font-family: 'gotham-bold', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color-white;
+
+      &[type=email] {
+        max-width: em(315);
+      }
+    }
+
+    #eWidgetSubmit {
+      display: inline-block;
+
+      button {
+        @include padding(.4em 1em);
+        border-radius: 0;
+        border: 1px solid $color-white;
+        @include rgba($color-white, 1);
+        color: $color-black;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:disabled {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .email_signup_messages {
+      margin-top: $base-spacing;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+
+    ::-webkit-input-placeholder {
+      color: $color-white;
+    }
+  }
+}

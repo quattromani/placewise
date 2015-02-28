@@ -1,0 +1,12 @@
+.cta {
+  @extend .button;
+  background: none;
+  box-shadow: inset 0 0 0 1px $color-brand-primary;
+  color: $color-brand-primary;
+
+  &:hover {
+    background: none;
+    box-shadow: inset 0 0 0 1px shade($color-brand-primary, 10%);
+    color: shade($color-brand-primary, 10%);
+  }
+}

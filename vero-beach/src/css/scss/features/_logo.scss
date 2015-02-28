@@ -1,0 +1,9 @@
+.mall-logo {
+  display: inline-block;
+  z-index: 9999;
+
+  @include media($mobile) {
+    display: block;
+    text-align: center;
+  }
+}

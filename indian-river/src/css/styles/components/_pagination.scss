@@ -1,0 +1,26 @@
+.pagination {
+  @include horizontal-list;
+  @include horizontal-center;
+  display: inline-block;
+
+  li {
+    // TODO this is messy - improve
+    border: 0!important;
+  }
+
+  .prev {
+    &:before {
+      margin-right: ($base-spacing / 2);
+      font-family: $fontawesome;
+      content: '\f104';
+    }
+  }
+
+  .next {
+    &:after {
+      margin-left: ($base-spacing / 2);
+      font-family: $fontawesome;
+      content: '\f105';
+    }
+  }
+}

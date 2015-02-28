@@ -1,0 +1,302 @@
+// =Site Defaults
+
+  @import "../vendor/neat/neat-helpers";
+
+  // =Grid settings
+  $gutter: em(20);
+  $grid-columns: 12;
+  $max-width: em(990);
+
+  // =Breakpoints
+  $tablet: new-breakpoint(max-width 1020px 8);
+  $mobile: new-breakpoint(max-width 480px 4);
+
+  $base-spacing: 1em !default;
+    $pad: $base-spacing;
+
+  // =Alpha
+  $site-alpha: .65;
+
+  // =Colors
+  $color-white: #fff;
+  $color-off-white: shade($color-white, 10%);
+  $color-black: #000;
+  $color-grey: #ccc;
+  $color-light-grey: #e1e1e1;
+  $color-dark-grey: #999;
+
+  // =Brand Palette
+  $color-brand-primary: #5dbc3c; // Headings
+  $color-brand-secondary: #1b1b1b; // Text
+  $color-brand-tertiary: $color-white; // Background
+  $color-brand-quaternary: #ec4b1f; // Accent
+  $color-brand-quinary: #999; // Accent
+
+  $color-brand-primary-complimentary: red;
+  $color-brand-secondary-complimentary: blue;
+  $color-brand-tertiary-complimentary: green;
+
+  $color-primary-red: red;
+  $color-primary-green: green;
+  $color-primary-blue: $color-brand-quinary;
+
+  // =Background
+  $site-bg: $color-brand-tertiary;
+  $site-bg-start: $color-brand-tertiary;
+  $site-bg-end: #fff;
+  $site-background-attachment: null; // 'fixed, local, inherit, or null'
+
+  // =Default Text Colors
+  $base-font-color: $color-brand-secondary;
+  $base-accent-color: $color-brand-tertiary;
+  // $heading-color: $color-brand-primary;
+  // $heading-color-alt: $color-brand-secondary;
+
+  // =Links
+  $base-link-bg: null;
+  $base-link-color: $color-brand-primary;
+  $base-link-color-hover: #009970;
+  $base-link-text-decoration: none !default;
+  $base-link-color-alt: $color-brand-secondary;
+  $base-link-color-alt-hover: mix($color-brand-secondary, black, 10%);
+
+  // =External Links
+  $link-external-color: $color-brand-secondary;
+  $link-external-color-hover: mix($color-brand-secondary, black, 10%);
+
+  // =Email Links
+  $email-link-color: $base-link-color;
+  $email-link-color-hover: shade($base-link-color, 10%);
+  $email-text-decoration: $base-font-color;
+
+  // =Phone Links
+  $phone-link-color: $color-brand-quinary;
+  $phone-link-color-hover: shade($base-link-color, 10%);
+  $phone-text-decoration: none;
+
+  // =Icons
+  $base-icon-color: $base-font-color;
+  $base-icon-color-hover: $base-link-color-hover;
+
+  // =Social Media
+  $twitter-link-color: #1c96db;
+  $twitter-link-color-hover: $twitter-link-color;
+  $facebook-link-color: #3b5998;
+  $facebook-link-color-hover: $facebook-link-color;
+  $youtube-link-color: #db1117;
+  $youtube-link-color-hover: $youtube-link-color;
+  $pinterest-link-color: #c92228;
+  $pinterest-link-color-hover: $pinterest-link-color;
+  $instagram-link-color: #517fa4;
+  $instagram-link-color-hover: $instagram-link-color;
+
+  // $icons-list: (
+  //   fa-twitter      #1c96db
+  //   fa-facebook     #3b5998
+  //   fa-youtube      #db1117
+  //   fa-pinterest    #c92228
+  //   fa-instagram    #517fa4
+  // );
+
+  $placeholder-color: $color-light-grey;
+
+  // =Supplementary Colors
+  $alert-bg: mix($color-primary-red, white, 40%);
+  $alert-color: $color-primary-red;
+  $success-bg: mix($color-primary-green, white, 40%);
+  $success-color: $color-primary-green;
+  $info-bg: mix($color-primary-blue, white, 40%);
+  $info-color: $color-primary-blue;
+
+  // =Inline Text Elements
+  $em-color: $base-font-color;
+  $mark-bg: $info-color;
+  $mark-color: $base-font-color !default;
+
+  // =Typography Basics
+  $base-font-reset: 10px !default;
+  $base-font-size: 16 !default;
+  $base-line-height: golden-ratio($base-font-size, -5);
+  $lede-font-size: $base-font-size * 1.125;
+  $body-text: $base-font-size;
+  $small-body-text: $base-font-size * .875;
+  $disclaimer-text: $base-font-size * .75;
+  $legal-text: $small-body-text;
+
+  // =Modular Scale
+  $modular-scale-ratio: 1.61803398875;
+
+  // =Font Families List
+  $font-faces: (
+      'Goudy-Trajan': ('goudytrajan-regular-trial-webfont', 400),
+      'Caviar_Dreams_Bold': ('Caviar_Dreams_Bold-webfont', 400),
+      'fontawesome': ('icons/fontawesome-webfont', normal)
+  );
+  $font-path: '../fonts/';
+
+  // =Font Families
+  $base-font-family: 'HelveticaNeue', 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  $heading-font-family: 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  $heading-font-family-alt: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  $fontawesome: 'FontAwesome';
+
+  // =Headings
+  $heading-color-primary: $color-brand-primary;
+  $heading-color-secondary: $color-brand-secondary;
+  $heading-line-height: 1.25;
+
+  $heading-list: (
+      h1   32   200   $heading-font-family    $heading-color-secondary,
+      h2   26   200   $heading-font-family    $heading-color-primary,
+      h3   22   700   $heading-font-family    $heading-color-primary,
+      h4   16   200   $heading-font-family    $heading-color-secondary,
+      h5   16   700   $heading-font-family    $heading-color-primary,
+      h6   16   100   $heading-font-family    $heading-color-secondary
+  );
+
+  // =Header
+  $header-bg: $color-white;
+  $header-border: $color-brand-primary;
+  $header-color: $base-font-color;
+  $header-link: $base-link-color;
+  $header-link-hover: $base-link-color-hover;
+  $header-pattern: 'path/to/pattern.png';
+
+  // =Nav
+  $nav-alignment: right;
+  $nav-positioning: -52px; // null
+  $nav-bg: transparent;
+  $nav-bg-hover: null;
+  $nav-font-family: $heading-font-family;
+  $nav-font-size: $lede-font-size;
+  $nav-font-weight: 500;
+  $nav-text-transform: uppercase;
+  $nav-color: $color-brand-secondary;
+  $nav-color-hover: $color-brand-quinary;
+  $nav-dropdown-bg: null;
+  $nav-dropdown-bg-hover: null;
+  $nav-dropdown-font-size: $base-font-size;
+  $nav-dropdown-color: null;
+  $nav-dropdown-color-hover: null;
+  $nav-dropdown-border-color: null;
+  $nav-dropdown-border-color-hover: null;
+  $nav-hamburger-bg: null;
+  $nav-hamburger-color: $color-brand-primary;
+  $nav-off-canvas-side: down; // left, right, down
+  $nav-hamburger-side: right; // if off-canvas, this should match off-canvas side
+  $nav-off-canvas-width: 70%;
+  $nav-off-canvas-bg: tint($color-brand-primary, 10%);
+  $nav-sticky: false !default;
+
+  // =Body
+  $body-bg: $color-white;
+  $body-pattern: null;
+
+  // =Container Setup
+  $container-bg: transparent;
+  $content-bg: transparent;
+  $content-border-color: $color-light-grey;
+  $box-bg: $color-white;
+  $box-border-color: $color-light-grey;
+
+  // =Footer
+  $footer-bg: null;
+  $footer-font-size: $disclaimer-text;
+  $footer-link-font-weight: 700;
+  $footer-text: $base-font-color;
+  $footer-link-color: $color-brand-primary;
+  $footer-link-color-hover: $base-link-color-hover;
+
+  // =Borders
+  $base-border-radius: 3px !default;
+  $base-border-style: solid;
+  $base-border-color: $color-grey;
+  $base-border: 1px $base-border-style $base-border-color;
+
+  // =Shadow
+  $base-box-shadow: 0 0 3px 3px $color-dark-grey;
+
+  // =Horizontal Rule
+  $hr-color-top: $color-brand-tertiary;
+  $hr-color-bottom: tint($color-brand-primary, 70%);
+
+  // =Forms
+  $form-border-color: $color-light-grey;
+  $form-border-color-hover: darken($base-border-color, 10);
+  $form-border-color-focus: $form-border-color-hover;
+  $form-border-radius: $base-border-radius;
+  $form-font-family: $base-font-family;
+  $form-font-size: $base-font-size;
+  $form-box-shadow: inset 0 1px 3px rgba($color-black,0.06);
+  $form-box-shadow-focus: null;
+
+  // =Buttons
+  $base-button-color: $color-brand-primary;
+  $base-button-color-hover: shade($base-button-color, 25%);
+
+  // =Search
+  $search-bg: $color-white;
+  $search-placeholder-color: $color-light-grey;
+  $search-button-bg: $base-button-color;
+  $search-button-color: $color-brand-secondary;
+
+  // =Images
+  $image-border: null;
+  $image-box-shadow: $form-box-shadow-focus;
+
+  // Carousel
+  $carousel-width: $max-width;
+
+  // =Scrollbar
+  $scrollbar-bg: $color-white;
+  $scrollbar-handle-color: $color-brand-secondary;
+
+  // =Modals
+  $modal-header-bg: $color-light-grey;
+  $modal-header-color: $base-font-color;
+  $modal-body-bg: $color-white;
+  $modal-body-color: $base-font-color;
+  $modal-link-color: $base-link-color;
+  $modal-link-color-hover: $base-link-color-hover;
+  $modal-footer-bg: $color-light-grey;
+  $modal-footer-color: $base-font-color;
+
+  // =iFeature
+  $iFeature-bg: rgba($color-black, $site-alpha);
+  $iFeature-text: $color-white;
+  $iFeature-link: $base-link-color;
+  $iFeature-link-hover: $base-link-color-hover;
+
+  // =Directory
+  $directory-link: $base-link-color-alt;
+  $directory-link-hover: $base-link-color-alt-hover;
+
+  // =Weather
+  $weather-icon-color: $base-font-color;
+  $weather-text-color: $base-font-color;
+
+  // =Transition
+  $transition-time: .3s;
+  $transition: all $transition-time ease-in-out;
+
+  // =Animations
+  $animation-delay: .5s;
+  $animation-duration: .5s;
+
+  // =---------------------------------------------------------------------- //
+
+  // =Warnings
+  $disable-warnings: false !default;
+
+  // =Mistakes
+  $find-mistakes: false;
+
+  // =Support IE8
+  $support-legacy: true;
+
+  // =Neat grid
+  $visual-grid: true !global;
+  $visual-grid-color: tint($color-primary-blue, 75%) !global;
+  $visual-grind-index: front !global;
+  $visual-grid-opacity: $site-alpha !global;
+

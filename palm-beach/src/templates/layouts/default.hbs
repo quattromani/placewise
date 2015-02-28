@@ -1,0 +1,20 @@
+{{> head }}
+<div class="outer-wrapper">
+  <div class="inner-wrapper">
+  {{> header }}
+  {{> nav }}
+
+  {{#if home}}
+    {{> carousel}}
+  {{/if}}
+
+  {{> content }}
+
+  {{> body }}
+
+  {{> end_content }}
+
+  {{> footer }}
+  </div>
+</div>
+{{> foot }}

@@ -1,0 +1,98 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Base -- Version: 0.2.1- Compiled: #{timestamp()}
+   ========================================================================== */
+
+/* ==========================
+    Reset
+   ========================== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, var, b, i, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  @include margin;
+  @include padding;
+  border: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+
+html {
+  overflow: auto;
+  height: 100%;
+  @include font-family($base-font);
+  font-size: $base-font-reset;
+  color: $text;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include box-sizing(border-box);
+
+  // trick to keep non-scrollbar => scrollbar pages from jumping
+  @include bp(bp-bigger) {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  @include font-size($base-font-size);
+  line-height: $base-line-height;
+  letter-spacing: .035em;
+}
+
+[hidden], template {
+  display: none; }
+
+@if $support-legacy {
+  body {
+    .ie &[style] {
+      font-size: 16px !important;
+    }
+  }
+}
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  @include padding($base-spacing 0);
+  background-color: $footer-bg;
+  box-shadow: 0 -4px 20px -2px rgba($color-brand-secondary, .1);
+  color: $footer-text;
+  @include opacity($site-alpha);
+  z-index: 100;
+
+  @include media($tablet) {
+    position: relative;
+    text-align: center;
+  }
+
+  span {
+    @include font-size($footer-font-size);
+  }
+
+  ul {
+    @include font-size($footer-font-size);
+  }
+
+  a {
+    color: $footer-link-color;
+    font-weight: $footer-link-font-weight;
+  }
+
+  .mall-details {
+    float:left;
+
+    @include media($tablet) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .mall-address,
+  .mall-contact,
+  .legal {
+    li {
+      margin: 0;
+      list-style: none outside none;
+    }
+  }
+
+  .mall-developers {
+    float: right;
+    @include horizontal-list(piped);
+    margin-top: ($base-spacing * 1.5);
+
+    @include media($tablet) {
+      float: none;
+      display: inline-block;
+      margin-top: $base-spacing auto;
+    }
+  }
+
+  .legal {
+    @include horizontal-list(piped);
+    font-weight: bold;
+
+    a {
+      &:hover {
+        color: rgb(2,43,98);
+      }
+    }
+  }
+
+  .footer-nav {
+    ul {
+      @include horizontal-list(piped);
+      float:left;
+
+      @include media($tablet) {
+        float: none;
+        margin: 0 auto;
+      }
+    }
+
+    .image-placewise-logo {
+      position: absolute;
+      right: 0;
+
+      @include media($tablet) {
+        position: relative;
+        margin: 0 auto;
+      }
+    }
+
+    @include media($tablet) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .social {
+    @include horizontal-list;
+    float: right;
+    text-align: right;
+
+    i {
+      @include font-size(40);
+    }
+
+    .facebook {
+      @include icon-before($icon-facebook-square);
+    }
+
+    .twitter {
+      @include icon-before($icon-twitter-square);
+    }
+
+    .pinterest {
+      @include icon-before($icon-pinterest-square);
+    }
+
+    .instagram {
+      @include icon-before($icon-instagram);
+    }
+
+    @include media($tablet) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .footer-disclaimer {
+    display: inline-block;
+    @include font-size($disclaimer-text);
+    margin-bottom: $base-spacing/2;
+  }
+}

@@ -1,0 +1,27 @@
+.mrec {
+  @include outer-container;
+  margin-top: $base-spacing;
+
+  .left,
+  .center,
+  .right {
+    @include span-columns(4);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      margin-bottom: $base-spacing;
+    }
+
+    img {
+      width: 100%;
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+  .right {
+    @include media($mobile) {
+      display: none;
+    }
+  }
+}

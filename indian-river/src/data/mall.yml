@@ -1,0 +1,22 @@
+# Site settings
+title: Indian River Mall
+version: 0.0.1
+author: Max Quattromani
+email: max@placewise.com
+description: "Indian River Mall is an indoor climate controlled shopping mall located near Disney's Vero Beach Resort and Minor League Baseball's Historic Dodgertown! We serve Vero Beach, Sebastian, Palm Bay, Ft. Pierce and Port St. Lucie. Enjoy shopping at one of over 70 specialty stores, including American Eagle Outfitters, Talbots, Hollister, Victoria's Secret, Gymboree and Express. Take a break from all that shopping in our 6-vendor food court or sit down at T.G.I. Friday’s. Catch the latest movies at the AMC 24-Screen Stadium Theatre or test your gaming skills at Pocket Change Arcade."
+baseurl: ""
+url: ""
+author: "Max Quattromani"
+
+google_analytics: false
+google_analytics_id: UA-XXXXXXXX-X
+jquery_version: 1.11.2
+
+name: mall
+streetaddress: 6200 20th St
+city: Vero Beach
+state: FL
+zip: 32966
+phone: (772) 770-9404
+
+footer: ""

@@ -1,0 +1,4 @@
+// Background Clip
+@mixin background-clip($type: padding-box) {
+  background-clip: $type;
+}

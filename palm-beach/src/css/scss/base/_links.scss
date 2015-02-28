@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+// Email links
+a[href^="mailto"] {
+  font-weight: normal;
+  color: $email-link-color;
+  text-decoration: $email-text-decoration;
+  @include transition;
+
+  &:before {
+    content: attr(data-cta);
+  }
+
+  &:hover:before {
+    content: attr(title);
+  }
+}
+
+// Phone links
+a[href^="tel"] {
+  font-weight: normal;
+  color: $phone-link-color;
+  text-decoration: $phone-text-decoration;
+  @include transition;
+}
+

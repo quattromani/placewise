@@ -1,0 +1,22 @@
+# Site settings
+title: Vero Beach Outlets
+version: 0.0.1
+author: MNoel Killebrew
+email: noel@placewise.com
+description: "Vero Beach Outlets"
+baseurl: ""
+url: ""
+author: "Noel Kilebrew"
+
+google_analytics: false
+google_analytics_id: UA-XXXXXXXX-X
+jquery_version: 1.11.2
+
+name: mall
+streetaddress: 1824 94th Drive
+city: Vero Beach
+state: FL
+zip: 32966
+phone: (772) 770-6097
+
+footer: ""

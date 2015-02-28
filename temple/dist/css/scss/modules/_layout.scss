@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.content,
+.container {
+  @include outer-container;
+}
+
+.content {
+  @include border-radius;
+  background-color: $content-bg;
+}
+
+article {
+  @include outer-container;
+  @include padding($base-spacing);
+
+  section {
+    @include span-columns(8);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  aside {
+    @include span-columns(4);
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+}
+
+
+.home {
+
+}

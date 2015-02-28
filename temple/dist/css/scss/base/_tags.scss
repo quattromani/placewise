@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import "../imports";
+
+hr {
+  @include clearfix;
+  @include margin($base-spacing, 0);
+  @include box-sizing(content-box);
+  height: 0;
+  border: 0;
+  border-top: 1px solid $color-light-grey;
+  border-bottom: 1px solid mix($site-bg, $color-white, 20%);
+}

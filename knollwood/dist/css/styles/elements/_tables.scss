@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+table {
+  @include font-feature-settings("kern","liga","tnum");
+  @include padding($base-spacing);
+  margin: ($base-spacing / 2) 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid darken($base-border-color, 15);
+  font-weight: bold;
+  padding: ($base-spacing / 2) 0;
+  text-align: left;
+}
+
+td {
+  padding: ($base-spacing / 2) 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}

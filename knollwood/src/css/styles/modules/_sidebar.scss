@@ -1,0 +1,12 @@
+.sidebar {
+  .articles {
+    ul {
+      @include vertical-list;
+    }
+
+    img {
+      float: left;
+      padding: 0 $base-spacing $base-spacing 0;
+    }
+  }
+}

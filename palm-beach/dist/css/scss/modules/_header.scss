@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+header {
+  position: relative;
+  @include padding($base-spacing);
+  @include border-radius($base-border-radius $base-border-radius 0 0);
+  border-bottom: 2px solid $color-brand-primary;
+  background-color: $header-bg;
+
+  a {
+    &.login {
+      @include font-size(12);
+      position: absolute;
+      top:0;
+      right:0;
+      font-weight:300;
+    }
+
+    &.hours {
+      @include font-size(12);
+      position: absolute;
+      top:30%;
+      right: 0;
+      font-weight:700;
+
+      @include media($mobile) {
+        position: relative;
+      }
+
+
+    span {
+      text-transform: uppercase;
+    }
+
+    }
+  }
+}
+

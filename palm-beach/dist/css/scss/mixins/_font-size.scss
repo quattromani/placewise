@@ -1,0 +1,10 @@
+// Font Size
+@mixin font-size($value) {
+  @if not unitless($value) {
+    $value: strip-units($value);
+  }
+  @if $support-legacy {
+    font-size: $value * 1px;
+  }
+  font-size: $value * .1rem;
+}

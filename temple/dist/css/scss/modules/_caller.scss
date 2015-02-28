@@ -1,0 +1,15 @@
+.caller {
+  display: block;
+  margin-bottom: $base-spacing;
+  @include padding($base-spacing/2 $base-spacing);
+  background-color: $color-black;
+
+  button {
+    float: left;
+  }
+
+  input[type="search"] {
+    float: right;
+    width: 200px;
+  }
+}

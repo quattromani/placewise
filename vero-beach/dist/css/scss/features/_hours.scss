@@ -1,0 +1,9 @@
+.hours {
+  @include media($mobile) {
+    display: block;
+    position: relative;
+    top: null;
+    left: null;
+    text-align: center;
+  }
+}

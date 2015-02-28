@@ -1,0 +1,52 @@
+[class*='swatch-'] {
+  @include margin(($base-spacing/2) 0);
+}
+
+.swatch- {
+  &color {
+    @include padding($base-spacing * 2);
+    @include span-columns(1);
+    @include omega(4n);
+    height: em(75);
+    border-radius: 50%;
+    border: 5px solid $color-white;
+  }
+
+  &swatches {
+    @include padding($base-spacing * 2);
+    height: em(75);
+    border: 5px solid $color-white;
+
+    &.swatch-1 {
+      @include swirls;
+    }
+
+    &.swatch-2 {
+      @include circle-pattern;
+    }
+
+    &.swatch-3 {
+      @include triangular;
+    }
+  }
+}
+
+[class*='anchor-'] {
+  @include outer-container;
+}
+
+.anchor- {
+  &icons {
+    ul {
+      @include horizontal-list;
+    }
+  }
+}
+
+.base-font-family {
+  font-family: $base-font-family;
+}
+
+.heading-font-family {
+  font-family: $heading-font-family;
+}

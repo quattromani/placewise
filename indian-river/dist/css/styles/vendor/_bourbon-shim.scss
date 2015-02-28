@@ -1,0 +1,11 @@
+// Shim Bourbon into libsass
+
+// Margin
+@mixin margin($top: 0, $right: null, $bottom: null, $left: null) {
+  margin: $top $right $bottom $left;
+}
+
+// Padding
+@mixin padding($top: 0, $right: null, $bottom: null, $left: null) {
+  padding: $top $right $bottom $left;
+}

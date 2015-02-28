@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+header[role="banner"] {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: $base-spacing 0;
+  background-color: $header-bg;
+  box-shadow: 0 4px 20px -2px rgba($color-brand-secondary, .15);
+  color: $header-color;
+  @include opacity($site-alpha);
+  z-index: 100;
+
+  a {
+    color: $header-color;
+
+    &.login {
+      @include font-size(12);
+      position: absolute;
+      top:0;
+      right:0;
+      font-weight:300;
+    }
+
+    &.hours {
+      @include font-size(12);
+      position: absolute;
+      top:30%;
+      right: 0;
+      font-weight:700;
+
+      @include media($mobile) {
+        position: relative;
+      }
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+# Site settings
+title: The Shoppes at Knollwood
+version: 0.0.1
+author: MAx Quattromani
+email: max@placewise.com
+description: "The Shoppes at Knollwood"
+baseurl: ""
+url: ""
+author: "Max Quattromani"
+
+google_analytics: false
+google_analytics_id: UA-XXXXXXXX-X
+jquery_version: 1.11.2
+
+name: mall
+streetaddress: 8332 Highway 7
+city: St Louis Park
+state: MN
+zip: 55426
+phone: (772) 770-6097
+
+footer: ""

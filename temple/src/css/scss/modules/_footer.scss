@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+footer {
+  @include padding($base-spacing 0);
+  background-color: $footer-bg;
+  color: $footer-text;
+  text-align: center;
+
+  ul {
+    @include horizontal-list(piped);
+    @include font-size($footer-font-size);
+  }
+
+  a {
+    color: $footer-link-color;
+    font-weight: $footer-link-font-weight;
+  }
+
+  .footer-disclaimer {
+    display: inline-block;
+    @include font-size($disclaimer-text);
+    margin-bottom: $base-spacing/2;
+  }
+
+  .pw-logo {
+    display: block;
+    @include margin(0 auto);
+  }
+}

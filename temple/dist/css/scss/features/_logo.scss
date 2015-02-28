@@ -1,0 +1,4 @@
+@include media($mobile) {
+  display: block;
+  @include centerer;
+}

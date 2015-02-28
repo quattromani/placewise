@@ -1,0 +1,24 @@
+# Site settings
+title: Palm Beach Outlets
+version: 0.0.1
+author: Max Quattromani
+email: max@placewise.com
+description: "Palm Beach Outlets"
+baseurl: ""
+url: "http://maxquattromani.com"
+author: "Max Quattromani"
+twitter_username: maxquattromani
+github_username:  quattromani
+
+google_analytics: false
+google_analytics_id: UA-XXXXXXXX-X
+jquery_version: 1.11.2
+
+name: mall
+streetaddress: 1751 Palm Beach Lakes Boulevard
+city: West Palm Beach
+state: FL
+zip: 33401
+phone: 561.515.4400
+
+footer: ""

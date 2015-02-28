@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+header {
+  position: relative;
+  @include padding(($base-spacing*2) $base-spacing);
+  @include border-radius($base-border-radius $base-border-radius 0 0);
+  background-color: $header-bg;
+}

@@ -1,0 +1,14 @@
+// RGBa Colors w/Fallback
+@mixin rgba($color, $alpha: $site-alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background: $rgba;
+  @if $support-legacy {
+    .ie & {
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str}, endColorstr=#{$ie-hex-str})";
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+      zoom: 1
+    }
+  }
+}

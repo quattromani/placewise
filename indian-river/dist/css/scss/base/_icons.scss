@@ -1,0 +1,47 @@
+[class*='fa-facebook'] {
+  color: $facebook-link-color;
+
+  &:hover {
+    color: shade($facebook-link-color, 10%);
+  }
+}
+
+[class*='fa-twitter'] {
+  color: $twitter-link-color;
+
+  &:hover {
+    color: shade($twitter-link-color, 10%);
+  }
+}
+
+[class*='fa-pinterest'] {
+  color: $pinterest-link-color;
+
+  &:hover {
+    color: shade($pinterest-link-color, 10%);
+  }
+}
+
+[class*='fa-instagram'] {
+  color: $instagram-link-color;
+
+  &:hover {
+    color: shade($instagram-link-color, 10%);
+  }
+}
+
+// // Build Headings
+// $i: 1;
+// @each $value in $icons-list {
+//   [class*='#{nth($value, 1)}'] {
+//     color: nth($value, 2);
+//   }
+//   $i: $i + 1 !global;
+// }
+
+// // extend later
+// // @if $#{}-link-color !== null {
+// //   color: $color-primary-brand;
+// // } @else {
+// //   color: $#{}-link-color;
+// // }

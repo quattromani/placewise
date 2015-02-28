@@ -1,0 +1,6 @@
+// $support-legacy mixin
+@mixin support-legacy {
+  @if $support-legacy {
+   @content;
+ }
+}

@@ -1,0 +1,11 @@
+.banner {
+  height: auto;
+  max-height: em(500);
+  margin-bottom: $base-spacing;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    background-position: center center;
+  }
+}

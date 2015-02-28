@@ -1,0 +1,26 @@
+<h1>Send to Email</h1>
+
+<form novalidate directive-send-to-email__form>
+  <label for="email">Email Address</label>
+  <input type="email" id="email" class="input-text">
+
+  <div class="fifty-fifty">
+    <button type="button" class="fifty-fifty__left button button--subdue" directive-modal__close>Cancel</button>
+    <button type="submit" class="fifty-fifty__right button">Send</button>
+  </div>
+</form>
+
+<div class="takeover" directive-send-to-email__success>
+  <div class="takeover__content">
+    <div class="vertical-align">
+      <div class="vertical-align__content">
+        <svg class="icon icon--big icon--good"><use xlink:href="#check" /></svg>
+
+        <h1>Success!</h1>
+        <p>We've sent a message to <span class="bold" directive-send-to-email__final-email></span></p>
+
+        <button type="button" class="button" directive-modal__close>OK</button>
+      </div>
+    </div>
+  </div>
+</div>

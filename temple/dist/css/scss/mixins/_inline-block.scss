@@ -1,0 +1,12 @@
+// Inline-Block IE
+@mixin inline-block($alignment: baseline) {
+  display: inline-block;
+  @if $alignment and $alignment != none {
+    vertical-align: $alignment;
+  }
+  @include support-legacy {
+    *zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+  }
+}

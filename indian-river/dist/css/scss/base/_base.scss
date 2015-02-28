@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* ==========================
+    Base
+   ========================== */
+
+html {
+  overflow: auto;
+  height: 100%;
+  font-family: $base-font-family;
+  font-size: $base-font-reset;
+  color: $base-font-color;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // trick to keep non-scrollbar => scrollbar pages from jumping
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+body {
+  @include linear-gradient($site-bg-start, $site-bg-end);
+  background: url($body-pattern);
+  height: 100%;
+  background-repeat: repeat;
+  background-attachment: $site-background-attachment;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  @include font-size($base-font-size);
+  line-height: $base-line-height;
+}
+
+[hidden], template {
+  display: none; }
+
+@if $support-legacy {
+  body {
+    .ie &[style] {
+      font-size: 16px !important;
+    }
+  }
+}
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}

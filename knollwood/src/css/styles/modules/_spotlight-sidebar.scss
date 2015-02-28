@@ -1,0 +1,13 @@
+.spotlightSidebar-cnt-row {
+  display: inline-block;
+  @include margin(null null $base-spacing);
+
+  img {
+    float: left;
+    @include margin(null $base-spacing null null);
+  }
+
+  p {
+    @include font-size($disclaimer-text);
+  }
+}

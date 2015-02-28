@@ -1,0 +1,61 @@
+// Vertical List Items
+@mixin vertical-list($arg: null) {
+  > li {
+    @include padding(($base-spacing / 2) 0);
+  }
+
+  @if $arg == lined {
+    & > li {
+      overflow: auto;
+      border-bottom: 1px dotted lighten($base-font-color, 40%);
+
+      &.js-last {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+@mixin horizontal-list($arg: null) {
+  li {
+    display: inline;
+
+    @if $arg == piped {
+      @include padding(0);
+
+      &:after {
+        content: '|';
+        @include padding(0 .25em 0 .5em);
+      }
+
+      &.js-last:after {
+        content: '';
+      }
+    }
+
+    @if $arg == slashed {
+      @include padding(0);
+
+      &:after {
+        content: '/';
+        @include padding(0 ($base-spacing / 2));
+      }
+
+      &.js-last:after {
+        content: '';
+      }
+    }
+  }
+}
+
+@mixin bulleted {
+  ~ ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: outside disc;
+    margin-left: 1em;
+    border-bottom: 0;
+  }
+}

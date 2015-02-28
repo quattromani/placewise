@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@if variable-exists(google-fonts-url) {
+  @import url($google-fonts-url);
+}
+
+// Build Font-Face
+@each $font-face-name, $font-face in $font-faces {
+
+  $font-weight: 'normal';
+  $font-style: 'normal';
+
+  // check if we are passing a list
+  @if (type-of($font-face) == list) {
+    $font-weight: nth($font-face, 2);
+    $font-style: if(length($font-face) == 3, nth($font-face, 3), 'normal');
+  }
+
+  // generate all font faces using their appropriate weights & styles
+  @font-face {
+    font-family: $font-face-name;
+    src: url('#{$font-path}#{nth($font-face, 1)}.eot');
+    src: url('#{$font-path}#{nth($font-face, 1)}.eot?') format('eot'),
+         url('#{$font-path}#{nth($font-face, 1)}.woff') format('woff'),
+         url('#{$font-path}#{nth($font-face, 1)}.ttf')  format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+
+  // generate placeholders so we can extend when we need to use a font
+  %#{$font-face-name} {
+    @include font($font-face-name, $font-style, $font-weight);
+  }
+}
+
+/* ==========================
+    Body Text
+   ========================== */
+
+.lede {
+  @include font-size($lede-font-size);
+}
+
+.body-text {
+  @include font-size($body-text);
+}
+
+.small-body-text {
+  @include font-size($small-body-text);
+}
+
+.disclaimer-text {
+  @include font-size($disclaimer-text);
+}
+
+/* ==========================
+    Links
+   ========================== */
+
+a {
+  @include margin(0);
+  @include padding(0);
+  background-color: transparent;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: 700;
+  color: $base-link-color;
+  text-decoration: $base-link-text-decoration;
+  cursor: pointer;
+  @include transition;
+
+  &.logo {
+    color: inherit;
+    &:hover {
+      border-bottom: none;
+    }
+  }
+
+  img {
+    border: 0 none;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $base-link-color-hover;
+  }
+
+  &.muted,
+  .muted & {
+    color: $color-light-grey;
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  &[href^="http://"],
+  &[href^="https://"] {
+    color: $link-external-color;
+
+    &:hover {
+      color: $link-external-color-hover;
+    }
+  }
+}
+
+small {
+  display: inline-block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote {
+  clear: inherit;
+  margin-bottom: $base-spacing / 3;
+  vertical-align: middle;
+}
+
+p,
+.p {
+  font-family: $base-font-family;
+  word-wrap: break-word;
+}
+
+.uppercase {
+  text-transform: capitalize;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+i {
+  font-style: normal;
+}
+
+blockquote {
+  width: 75%;
+  padding-left: $base-spacing;
+  border-left: 3px solid currentColor;
+  font-style: italic;
+  color: tint($base-font-color, 20%);
+}
+
+q {
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+abbr {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+b,
+strong,
+.b {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+dfn {
+  font-style: italic;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+mark {
+  background: $info-bg;
+  color: $info-color;
+}

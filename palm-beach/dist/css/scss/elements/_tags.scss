@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+hr {
+  clear: both;
+  @include margin($base-spacing 0);
+  @include box-sizing(content-box);
+  height: 0;
+  border: 0;
+  border-top: 1px solid $hr-color-top;
+  border-bottom: 1px solid $hr-color-bottom;
+}

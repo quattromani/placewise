@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.job-list {
+  ul {
+    @include vertical-list(lined);
+  }
+}

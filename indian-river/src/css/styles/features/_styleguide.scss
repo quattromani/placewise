@@ -1,0 +1,65 @@
+.styleguide {
+  article {
+    @include pull;
+  }
+
+  aside {
+    @include push;
+  }
+}
+
+.swatch {
+  @include margin(0 0 $base-spacing);
+
+  &:last-of-type {
+    @include margin(0);
+  }
+}
+
+.swatch- {
+  &color {
+    @include padding($base-spacing * 1.5);
+    @include border-radius($base-border-radius $base-border-radius 0 0);
+    border-top: 1px solid $base-border-color;
+    border-right: 1px solid $base-border-color;
+    border-left: 1px solid $base-border-color;
+  }
+
+  &info {
+    @include padding($base-spacing / 2);
+    background-color: $color-white;
+    border-right: 1px solid $base-border-color;
+    border-bottom: 1px solid $base-border-color;
+    border-left: 1px solid $base-border-color;
+    text-align: center;
+
+    p {
+      @include margin(0);
+    }
+  }
+
+  &swatches {
+    @include padding($base-spacing * 2);
+    height: em(75);
+  }
+}
+
+[class*='anchor-'] {
+  @include outer-container;
+}
+
+.anchor- {
+  &icons {
+    ul {
+      @include horizontal-list;
+    }
+  }
+}
+
+.base-font-family {
+  font-family: $base-font-family;
+}
+
+.heading-font-family {
+  font-family: $heading-font-family;
+}

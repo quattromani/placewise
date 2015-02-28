@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@if $find-mistakes {
+
+/* ==========================
+   Empty Elements
+   ========================== */
+
+  div,
+  span,
+  li,
+  p,
+  td,
+  th {
+    &:empty {
+      padding: 2em;
+      border: 2px dotted $color-primary-red !important;
+    }
+  }
+
+/* ==========================
+   Empty Attributes
+   ========================== */
+
+  *[alt=""],
+  *[title=""],
+  *[class=""],
+  *[id=""],
+  a[href=""],
+  a[href="#"] {
+    border: 2px solid $color-primary-blue !important;
+  }
+
+/* ==========================
+   Deprecated Elements
+   ========================== */
+
+  applet,
+  basefont,
+  center,
+  dir,
+  font,
+  isindex,
+  menu,
+  strike {
+    border: 2px dotted $color-primary-red !important;
+    background-color: tint($color-primary-red, 40%) !important;
+  }
+
+/* ==========================
+   Deprecated Attributes
+   ========================== */
+
+  *[background],
+  *[bgcolor],
+  *[clear],
+  *[color],
+  *[compact],
+  *[noshade],
+  *[nowrap],
+  *[size],
+  *[start],
+  *[bottommargin],
+  *[leftmargin],
+  *[rightmargin],
+  *[topmargin],
+  *[marginheight],
+  *[marginwidth],
+  *[alink],
+  *[link],
+  *[text],
+  *[vlink],
+  *[align],
+  *[valign],
+  *[hspace],
+  *[vspace],
+  *[height],
+  *[width],
+  ul[type],
+  ol[type],
+  li[type] {
+    border: 2px solid $color-primary-red !important;
+    background-color: tint($color-primary-red, 40%) !important;
+  }
+
+/* ==========================
+   Proposed Deprecated Elements
+   ========================== */
+
+  big,
+  tt {
+    border: 2px dotted $color-primary-blue !important;
+    background-color: tint($color-primary-blue, 40%) !important;
+  }
+
+/* ==========================
+   Proposed Deprecated Attributes
+   ========================== */
+
+  *[border],
+  a[target],
+  table[cellpadding],
+  table[cellspacing],
+  *[name] {
+    border: 2px solid $color-primary-blue !important;
+    background-color: tint($color-primary-blue, 40%) !important;
+  }
+
+}

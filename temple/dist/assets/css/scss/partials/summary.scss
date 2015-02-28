@@ -1,0 +1,47 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Summary -- Version: 0.2.1 - Compiled: #{timestamp()}
+    ========================================================================== */
+
+@if $summary {
+
+  details {
+    @include margin($base-spacing, 0);
+    background: lighten($color-light-grey, 5%);
+
+    p {
+      @include padding(1em);
+    }
+
+    summary {
+      display: inline-block;
+      width: 100%;
+      @include padding($base-spacing / 2);
+      background: $color-grey;
+      outline: none;
+      color: $text;
+
+      // Hide the Default Marker
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:before {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: ($base-spacing / 2);
+        content: "\f078";
+        @include font-family($fontawesome);
+      }
+    }
+
+    &[open] summary:before {
+      content: "\f077";
+    }
+  }
+
+}
+

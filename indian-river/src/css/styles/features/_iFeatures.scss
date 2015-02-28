@@ -1,0 +1,27 @@
+.iFeatures {
+  h3 {
+    @include font-size(18);
+    text-transform:uppercase;
+    font-weight:400;
+  }
+
+  ul {
+    @include bulleted;
+    line-height:1;
+  }
+
+  a {
+    @include font-size(12);
+    color:$color-brand-secondary;
+
+    &.alt-color {
+      color:$color-brand-quaternary;
+      white-space: nowrap;
+    }
+  }
+
+  .viewport {
+    height: 106px;
+    overflow: scroll;
+  }
+}

@@ -1,0 +1,17 @@
+.sale {
+  @include padding($base-spacing 0);
+  border-bottom: $base-border;
+
+  img {
+    float: left;
+    margin-right: $base-spacing;
+  }
+
+  &:last-of-type {
+    border: none;
+  }
+
+  .visit-share {
+    text-align: right;
+  }
+}

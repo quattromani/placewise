@@ -1,0 +1,31 @@
+# Site settings
+title: Style Guide
+version: 0.0.1
+author: Max Quattromani
+email: max@maxquattromani.com
+description: ""
+baseurl: "/styleguide"
+url: "http://maxquattromani.com"
+author: "Max Quattromani"
+twitter_username: maxquattromani
+github_username:  quattromani
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+exclude: ['node_modules', 'scss', 'DAM']
+
+google_analytics: false
+google_analytics_id: UA-XXXXXXXX-X
+jquery_version: 1.11.2
+
+name: mall
+streetaddress: 123 Mainstreet
+city: Anytown
+state: CO
+zip: 11111
+phone: (333)333-3333
+
+footer: ""

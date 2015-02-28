@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+nav {
+  background: $color-black;
+  background: -moz-linear-gradient(top,  #4c4c4c 0%, #2c2c2c 50%, #000000 51%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(50%,#2c2c2c), color-stop(51%,#000000), color-stop(100%,#000000));
+  background: -webkit-linear-gradient(top,  #4c4c4c 0%,#2c2c2c 50%,#000000 51%,#000000 100%);
+  background: -o-linear-gradient(top,  #4c4c4c 0%,#2c2c2c 50%,#000000 51%,#000000 100%);
+  background: -ms-linear-gradient(top,  #4c4c4c 0%,#2c2c2c 50%,#000000 51%,#000000 100%);
+  background: linear-gradient(to bottom,  #4c4c4c 0%,#2c2c2c 50%,#000000 51%,#000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#000000',GradientType=0 );
+
+  .container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  ul {
+    display: table-row;
+    width: 100%;
+
+    li {
+      position: relative;
+      display: table-cell;
+      border-left: 1px solid $color-brand-secondary;
+      border-right: 1px solid $color-black;
+      font-size: $nav-font-size;
+      line-height: normal;
+      text-align: center;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        display: block;
+        @include padding($base-spacing / 2, $base-spacing);
+        @include font-size($nav-font-size);
+        font-family: $nav-font-family;
+        font-weight: $nav-font-weight;
+        vertical-align: middle;
+        color: $nav-color;
+
+        &:hover {
+          background-color: $nav-bg-hover;
+          color: $nav-color-hover;
+          text-decoration: none;
+        }
+      }
+    }
+
+    ul {
+      display: none;
+    }
+  }
+
+  .show-menu {
+    display: none;
+    @include padding($base-spacing / 2, 0);
+    color: $color-white;
+  }
+
+  input[type=checkbox]{
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ .navigation {
+    display: block;
+
+    & li {
+      &:first-child {
+        border: none;
+      }
+    }
+
+    & > li.js-last {
+      margin-bottom: .5em;
+    }
+  }
+
+  @if $support-legacy {
+    .ie8 & {
+      background-color: $color-grey;
+    }
+  }
+}
+
+.fixed {
+  position:fixed;
+  top:0;
+}

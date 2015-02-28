@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* ==========================
+    Headings
+   ========================== */
+
+// Build Headings
+$i: 1;
+@each $value in $heading-list {
+  #{nth($value, 1)},
+  .#{nth($value, 1)} {
+    font-family: nth($value, 4);
+    @include font-size(nth($value, 2));
+    font-weight: nth($value, 3);
+    line-height: $heading-line-height;
+    color: nth($value, 5);
+
+    @if $i <= 3 {
+      @include media($tablet) {
+        @include font-size(nth($value, 2) * .875)
+      }
+
+      @include media($mobile) {
+        @include font-size(nth($value, 2) * .75)
+      }
+    }
+  }
+  $i: $i + 1 !global;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  display: inline-block;
+}

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.service-list {
+  ul {
+    @include vertical-list(lined);
+  }
+}

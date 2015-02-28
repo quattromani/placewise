@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+footer {
+  @include padding($base-spacing 0);
+  background-color: $footer-bg;
+  color: $footer-text;
+
+  span {
+    @include font-size($footer-font-size);
+  }
+
+  ul {
+    @include font-size($footer-font-size);
+  }
+
+  a {
+    color: $footer-link-color;
+    font-weight: $footer-link-font-weight;
+  }
+
+  .mall-details {
+    float:left;
+
+    @include media($mobile) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .legal {
+    @include horizontal-list(piped);
+    float:left;
+
+    @include media($mobile) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .social {
+    @include horizontal-list;
+    float: right;
+    text-align: right;
+
+    .fa {
+      @include font-size(40);
+    }
+
+    @include media($mobile) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .footer-disclaimer {
+    display: inline-block;
+    @include font-size($disclaimer-text);
+    margin-bottom: $base-spacing/2;
+  }
+
+  .pw-logo {
+    clear: both;
+    float: right;
+    @include margin(0 auto);
+
+    @include media($mobile) {
+      float: none;
+      text-align: center;
+    }
+  }
+}

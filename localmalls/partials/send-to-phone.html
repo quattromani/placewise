@@ -1,0 +1,26 @@
+<h1>Send to Phone</h1>
+
+<form novalidate directive-send-to-phone__form>
+  <label for="phone">Phone Number</label>
+  <input type="phone" id="phone" class="input-text">
+
+  <div class="fifty-fifty">
+    <button type="button" class="fifty-fifty__left button button--subdue" directive-modal__close>Cancel</button>
+    <button type="submit" class="fifty-fifty__right button">Send</button>
+  </div>
+</form>
+
+<div class="takeover" directive-send-to-phone__success>
+  <div class="takeover__content">
+    <div class="vertical-align">
+      <div class="vertical-align__content">
+        <svg class="icon icon--big icon--good"><use xlink:href="#check" /></svg>
+
+        <h1>Success!</h1>
+        <p>We've sent a message to <span class="bold" directive-send-to-phone__final-phone></span></p>
+
+        <button type="button" class="button" directive-modal__close>OK</button>
+      </div>
+    </div>
+  </div>
+</div>

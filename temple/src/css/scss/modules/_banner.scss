@@ -1,0 +1,10 @@
+.banner {
+  height: auto;
+  max-height: em(500);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    background-position: center center;
+  }
+}

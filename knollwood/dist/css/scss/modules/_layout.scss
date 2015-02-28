@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.content,
+.container {
+  @include outer-container;
+  position: relative;
+}
+
+.content {
+  @include border-radius;
+  background-color: $content-bg;
+
+  @include media($tablet) {
+    @include padding(0 $base-spacing);
+  }
+}
+
+section {
+  @include margin($base-spacing 0);
+  overflow: auto;
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+
+article {
+  @include outer-container;
+  @include span-columns(8);
+  @include margin(0 null);
+
+  @include media($mobile) {
+    @include span-columns(4);
+    @include padding(0);
+    border: none;
+  }
+}
+
+aside {
+  @include span-columns(4);
+  @include padding(null null null $base-spacing);
+  border-left: $base-border;
+
+  @include media($mobile) {
+    @include span-columns(4);
+    @include padding(0);
+    border: none;
+  }
+}
